@@ -9,6 +9,7 @@ Vue.config.productionTip = false
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  //这里传这个参数的目的是为了让这项目都有路由的功能
   router,
   components: { App },
   template: '<App/>'
