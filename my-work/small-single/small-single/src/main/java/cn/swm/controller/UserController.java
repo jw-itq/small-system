@@ -1,12 +1,16 @@
 package cn.swm.controller;
 
+import cn.swm.mapper.TbUserMapper;
+import cn.swm.pojo.TbUser;
 import cn.swm.pojo.common.Result;
+import cn.swm.service.UserService;
 import cn.swm.utils.GeetestLib;
 import cn.swm.utils.ResultUtil;
 import io.swagger.annotations.Api;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.subject.Subject;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.DigestUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -14,11 +18,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
-import java.util.Map;
 
 @RestController
 @Api(description = "管理员管理")
 public class UserController {
+
+    @Autowired
+    private UserService userService;
 
     @RequestMapping(value = "/geetestInit",method = RequestMethod.GET)
     public String geetesrInit(HttpServletRequest request){
@@ -67,12 +73,12 @@ public class UserController {
         if(gt_server_status == 1){
             //gt-server正常，向gt-server进行二次验证
             gtResult = gtSdk.enhencedValidateRequest(challenge,validate,seccode,param);
-            System.out.println(gtResult);
+            System.out.println("gt-server正常，向gt-server进行二次验证--"+gtResult);
         }else {
             // gt-server非正常情况下，进行failback模式验证
             System.out.println("failback:use your own server captcha validate");
             gtResult = gtSdk.failbackValidateRequest(challenge,validate,seccode);
-            System.out.println(gtResult);
+            System.out.println("gt-server非正常情况下，进行failback模式验证"+gtResult);
         }
 
         if(gtResult == 1){
@@ -88,8 +94,28 @@ public class UserController {
                 return new ResultUtil<Object>().setErrorMsg("用户名或密码错误");
             }
         }else {
-            //
+            //验证失败
             return new ResultUtil<Object>().setErrorMsg("验证失败");
         }
+    }
+
+    /*@RequestMapping(value = "/user/login",method = RequestMethod.GET)
+    public String test(){
+        return "hello";
+    }*/
+
+    @RequestMapping(value = "/user/userInfo",method = RequestMethod.GET)
+    public Result<TbUser> getUserInfo(){
+        String username = SecurityUtils.getSubject().getPrincipal().toString();
+        TbUser tbUser = userService.getUserByUsername(username);
+        tbUser.setPassword(null);
+        return new ResultUtil<TbUser>().setData(tbUser);
+    }
+
+    @RequestMapping(value = "/user/logout",method = RequestMethod.GET)
+    public Result<Object> logout(){
+        Subject subject = SecurityUtils.getSubject();
+        subject.logout();
+        return new ResultUtil<Object>().setData(null);
     }
 }

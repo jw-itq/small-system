@@ -22,14 +22,14 @@
     <script type="text/javascript" src="lib/DD_belatedPNG_0.0.8a-min.js" ></script>
     <script>DD_belatedPNG.fix('*');</script>
     <![endif]-->
-    <title>XMall后台管理系统 v1.1</title>
-    <meta name="keywords" content="XMall后台管理系统 v1.1,XMall,XMall购物商城后台管理系统">
-    <meta name="description" content="XMall后台管理系统 v1.1，是一款电商后台管理系统，适合中小型CMS后台系统。">
+    <title>SMall后台管理系统 v1.1</title>
+    <meta name="keywords" content="SMall后台管理系统 v1.1,SMall,SMall购物商城后台管理系统">
+    <meta name="description" content="SMall后台管理系统 v1.1，是一款电商后台管理系统，适合中小型CMS后台系统。">
 </head>
 <body>
 <header class="navbar-wrapper">
     <div class="navbar navbar-fixed-top">
-        <div class="container-fluid cl"> <a class="logo navbar-logo f-l mr-10 hidden-xs" href="/">XMall后台管理系统</a> <a class="logo navbar-logo-m f-l mr-10 visible-xs" href="/">XMall后台管理系统</a>
+        <div class="container-fluid cl"> <a class="logo navbar-logo f-l mr-10 hidden-xs" href="/">SMall后台管理系统</a> <a class="logo navbar-logo-m f-l mr-10 visible-xs" href="/">SMall后台管理系统</a>
             <span class="logo navbar-slogan f-l mr-10 hidden-xs">v1.1</span>
             <a aria-hidden="false" class="nav-toggle Hui-iconfont visible-xs" href="javascript:;">&#xe667;</a>
             <nav class="nav navbar-nav">
@@ -40,9 +40,9 @@
                             <li><a href="javascript:;" onclick="member_add('添加用户','member-add','','630')"><i class="Hui-iconfont">&#xe60d;</i> 用户</a></li>
                         </ul>
                         <li class="navbar-levelone current"><a href="javascript:;">平台</a></li>
-                        <li class="navbar-levelone"><a href="javascript:;">财务</a></li>
+                        <%--<li class="navbar-levelone"><a href="javascript:;">财务</a></li>
                         <li ><a href="http://xpay.exrick.cn" target="_blank">XPay支付系统</a></li>
-                        <li ><a href="http://xmall.exrick.cn" target="_blank">商城前台</a></li>
+                        <li ><a href="http://xmall.exrick.cn" target="_blank">商城前台</a></li>--%>
                     </li>
                 </ul>
             </nav>
@@ -57,9 +57,9 @@
                             <li><a onclick="logout()">退出</a></li>
                         </ul>
                     </li>
-                    <li id="thanks"> <a onclick="thanks()" title="捐赠"><i class="Hui-iconfont" style="font-size:18px">&#xe6bb;</i></a> </li>
+                    <%--<li id="thanks"> <a onclick="thanks()" title="捐赠"><i class="Hui-iconfont" style="font-size:18px">&#xe6bb;</i></a> </li>--%>
                     <li id="LockScreen"> <a href="lock-screen" title="锁屏"><i class="Hui-iconfont" style="font-size:18px">&#xe60e;</i></a> </li>
-                    <li id="Hui-msg"> <a onclick="thanks()" title="消息"><span class="badge badge-danger">3</span><i class="Hui-iconfont" style="font-size:18px">&#xe68a;</i></a> </li>
+                   <%-- <li id="Hui-msg"> <a onclick="thanks()" title="消息"><span class="badge badge-danger">3</span><i class="Hui-iconfont" style="font-size:18px">&#xe68a;</i></a> </li>--%>
                     <li id="Hui-skin" class="dropDown right dropDown_hover"> <a href="javascript:;" class="dropDown_A" title="换肤"><i class="Hui-iconfont" style="font-size:18px">&#xe62a;</i></a>
                         <ul class="dropDown-menu menu radius box-shadow">
                             <li><a href="javascript:;" data-val="default" title="默认（蓝色）">默认（蓝色）</a></li>
@@ -172,7 +172,7 @@
         </dl>
     </div>
 
-    <div class="menu_dropdown bk_2" style="display:none">
+    <%--<div class="menu_dropdown bk_2" style="display:none">
         <dl id="menu-thank">
             <dt><i class="Hui-iconfont">&#xe6b7;</i> 捐赠管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
             <dd>
@@ -181,7 +181,7 @@
                 </ul>
             </dd>
         </dl>
-    </div>
+    </div>--%>
 </aside>
 <div class="dislpayArrow hidden-xs"><a class="pngfix" href="javascript:void(0);" onClick="displaynavbar(this)"></a></div>
 <section class="Hui-article-box">
@@ -224,7 +224,7 @@
             tabBar:".navbar-wrapper .navbar-levelone",
             tabCon:".Hui-aside .menu_dropdown",
             className:"current",
-            index:0,
+            index:0
         });
     });
 
@@ -232,7 +232,7 @@
     function myselfinfo(){
         layer_show('管理员信息','admin-show',360,400);
     }
-    
+
     /*产品-添加*/
     function product_add(title,url){
         var index = layer.open({
@@ -271,7 +271,7 @@
             layer.alert('数据处理失败! 错误码:'+XMLHttpRequest.status+' 错误信息:'+JSON.parse(XMLHttpRequest.responseText).message,{title: '错误信息',icon: 2});
         }
     });
-    
+
     function logout() {
         $.ajax({
             type: 'GET',

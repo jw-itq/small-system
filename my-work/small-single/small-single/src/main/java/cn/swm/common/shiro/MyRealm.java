@@ -16,8 +16,15 @@ public class MyRealm extends AuthorizingRealm {
 
     @Autowired
     private UserService userService;
+
+    /**
+     * 返回权限信息
+     * @param principal
+     * @return
+     */
     @Override
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principal) {
+
         //获取用户名
         String username = principal.getPrimaryPrincipal().toString();
         SimpleAuthorizationInfo authorizationInfo = new SimpleAuthorizationInfo();
@@ -25,6 +32,8 @@ public class MyRealm extends AuthorizingRealm {
         authorizationInfo.setRoles(userService.getRoles(username));
         //获得授权权限
         authorizationInfo.setStringPermissions(userService.getPermissions(username));
+
+        System.out.println("返回权限信息--="+authorizationInfo.toString());
 
         return authorizationInfo;
     }
@@ -37,6 +46,8 @@ public class MyRealm extends AuthorizingRealm {
      */
     @Override
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken token) throws AuthenticationException {
+
+        System.out.println("先执行登陆-token.getPrincipal().toString()="+token.getPrincipal().toString()+"--token.toString()="+token.toString());
         String username = token.getPrincipal().toString();
         TbUser tbUser = userService.getUserByUsername(username);
         if(tbUser!=null){

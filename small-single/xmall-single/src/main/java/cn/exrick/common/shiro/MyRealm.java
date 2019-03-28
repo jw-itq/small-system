@@ -29,6 +29,8 @@ public class MyRealm extends AuthorizingRealm{
     @Override
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principal) {
 
+        System.out.println("返回权限的信息="+principal.getPrimaryPrincipal().toString());
+
         //获取用户名
         String username=principal.getPrimaryPrincipal().toString();
         SimpleAuthorizationInfo authorizationInfo=new SimpleAuthorizationInfo();
@@ -47,6 +49,8 @@ public class MyRealm extends AuthorizingRealm{
      */
     @Override
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken token) throws AuthenticationException {
+
+        System.out.println("先执行登陆");
 
         //获取用户名密码
         String username = token.getPrincipal().toString();

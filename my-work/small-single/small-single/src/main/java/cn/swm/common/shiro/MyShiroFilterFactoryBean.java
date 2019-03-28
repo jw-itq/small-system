@@ -31,6 +31,7 @@ public class MyShiroFilterFactoryBean extends ShiroFilterFactoryBean {
     @Override
     public void setFilterChainDefinitions(String definitions) {
 
+
         MyShiroFilterFactoryBean.definitions = definitions;
 
         //数据库动态权限
@@ -39,6 +40,8 @@ public class MyShiroFilterFactoryBean extends ShiroFilterFactoryBean {
             //字符串拼接权限
             definitions += tbShiroFilter.getName()+"="+tbShiroFilter.getPerms()+"\n";
         }
+
+        System.out.println("从数据库动态获取权限---"+definitions);
 
         //从配置文件加载权限配置
         Ini ini = new Ini();

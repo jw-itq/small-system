@@ -17,6 +17,8 @@ public class MyPermissionFilter extends AuthorizationFilter {
     @Override
     protected boolean isAccessAllowed(ServletRequest request, ServletResponse response, Object o) throws Exception {
 
+        System.out.println("这里是isAccessAllowed"+request.toString()+"--"+response.toString()+"--"+(String[])o);
+
         Subject subject = this.getSubject(request, response);
         String[] perms = (String[]) ((String[]) o);
         boolean isPermitted = true;
@@ -55,6 +57,7 @@ public class MyPermissionFilter extends AuthorizationFilter {
                 }
             }
         }
+        System.out.println("方法isAccessAllowed执行结束");
         return isPermitted;
     }
 

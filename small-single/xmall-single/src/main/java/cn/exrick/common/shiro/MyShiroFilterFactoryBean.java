@@ -34,6 +34,8 @@ public class MyShiroFilterFactoryBean extends ShiroFilterFactoryBean {
     @Override
     public void setFilterChainDefinitions(String definitions) {
 
+        System.out.println("从数据库动态的读取权限=="+definitions);
+
         MyShiroFilterFactoryBean.definitions = definitions;
 
         //数据库动态权限

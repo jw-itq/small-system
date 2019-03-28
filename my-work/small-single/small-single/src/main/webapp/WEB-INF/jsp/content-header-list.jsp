@@ -79,6 +79,7 @@
                 url:"/content/list/0",
                 type: 'GET'
             },
+            "aLengthMenu" : [5, 7, 10], //更改显示记录数选项
             "columns": [
                 { "data": null,
                     render : function(data,type, row, meta) {
@@ -123,6 +124,7 @@
         layer_show(title,url,w,h);
     }
 
+    //为了能够回显的数据
     var id,picUrl,fullUrl,sortOrder,type;
     function edit(title,url,w,h){
         var table = $('.table').DataTable();

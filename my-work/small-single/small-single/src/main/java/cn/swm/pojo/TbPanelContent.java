@@ -1,5 +1,6 @@
 package cn.swm.pojo;
 
+import java.math.BigDecimal;
 import java.util.Date;
 
 public class TbPanelContent {
@@ -24,6 +25,41 @@ public class TbPanelContent {
     private Date created;
 
     private Date updated;
+
+
+    /**
+     * 关联商品信息
+     * @return
+     */
+    private BigDecimal salePrice;
+
+    private String productName;
+
+    private String subTitle;
+
+    public BigDecimal getSalePrice() {
+        return salePrice;
+    }
+
+    public void setSalePrice(BigDecimal salePrice) {
+        this.salePrice = salePrice;
+    }
+
+    public String getProductName() {
+        return productName;
+    }
+
+    public void setProductName(String productName) {
+        this.productName = productName;
+    }
+
+    public String getSubTitle() {
+        return subTitle;
+    }
+
+    public void setSubTitle(String subTitle) {
+        this.subTitle = subTitle;
+    }
 
     public Integer getId() {
         return id;

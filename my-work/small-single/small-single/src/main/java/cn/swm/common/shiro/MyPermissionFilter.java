@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -16,6 +17,8 @@ public class MyPermissionFilter extends AuthorizationFilter {
 
     @Override
     protected boolean isAccessAllowed(ServletRequest request, ServletResponse response, Object o) throws Exception {
+
+        System.out.println("在isAccessAllowed方法中了-request="+request.toString()+"--response="+response.toString()+"--o="+ Arrays.toString((String[])o));
 
         Subject subject = this.getSubject(request,response);
 
