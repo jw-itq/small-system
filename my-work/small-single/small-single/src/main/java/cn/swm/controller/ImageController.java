@@ -21,8 +21,9 @@ public class ImageController {
                                      HttpServletRequest request){
         String imagePath = null;
         // 文件保存路径
-        String filePath = request.getSession().getServletContext().getRealPath("/upload")+"\\"
+        String filePath = request.getSession().getServletContext().getRealPath("/upload")+"/"
                 + QiniuUtil.renamePic(files.getOriginalFilename());
+        System.out.println("文件保存的路径——"+filePath);
         // 转存文件
         try {
             //保存至服务器
@@ -30,6 +31,7 @@ public class ImageController {
             files.transferTo(file);
             //上传七牛云服务器
             imagePath= QiniuUtil.qiniuUpload(filePath);
+            System.out.println("上传文件到七牛云服务器上面:"+imagePath);
             if(imagePath.contains("error")){
                 throw new SmallUploadException("上传失败");
             }

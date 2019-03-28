@@ -1,4 +1,6 @@
 /home/IDEA/small-system/my-work/small-single/small-single/src/main/java/cn/swm/pojo/TbUserExample.java
+/home/IDEA/small-system/my-work/small-single/small-single/src/main/java/cn/swm/service/ItemService.java
+/home/IDEA/small-system/my-work/small-single/small-single/src/main/java/cn/swm/service/impl/ItemServiceImpl.java
 /home/IDEA/small-system/my-work/small-single/small-single/src/main/java/cn/swm/pojo/TbOrderShipping.java
 /home/IDEA/small-system/my-work/small-single/small-single/src/main/java/cn/swm/mapper/TbMemberMapper.java
 /home/IDEA/small-system/my-work/small-single/small-single/src/main/java/cn/swm/utils/DtoUtil.java
@@ -34,6 +36,7 @@
 /home/IDEA/small-system/my-work/small-single/small-single/src/main/java/cn/swm/mapper/TbThanksMapper.java
 /home/IDEA/small-system/my-work/small-single/small-single/src/main/java/cn/swm/common/shiro/MyPermissionFilter.java
 /home/IDEA/small-system/my-work/small-single/small-single/src/main/java/cn/swm/service/impl/SystemServiceImpl.java
+/home/IDEA/small-system/my-work/small-single/small-single/src/main/java/cn/swm/controller/ItemController.java
 /home/IDEA/small-system/my-work/small-single/small-single/src/main/java/cn/swm/controller/UserController.java
 /home/IDEA/small-system/my-work/small-single/small-single/src/main/java/cn/swm/pojo/TbExpress.java
 /home/IDEA/small-system/my-work/small-single/small-single/src/main/java/cn/swm/pojo/TbOrder.java

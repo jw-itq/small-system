@@ -80,7 +80,7 @@
                 type: 'GET',
                 data:{
                     "cid":-1
-                },
+                }
             },
             "columns": [
                 { "data": "id"},

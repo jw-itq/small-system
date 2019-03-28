@@ -40,4 +40,5 @@ public class ContentController {
         contentService.updatePanelContent(tbPanelContent);
         return new ResultUtil<Object>().setData(null);
     }
+
 }
