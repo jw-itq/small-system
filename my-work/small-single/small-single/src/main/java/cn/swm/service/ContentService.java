@@ -12,4 +12,8 @@ public interface ContentService {
     int deletePanelContent(int id);
 
     int updatePanelContent(TbPanelContent tbPanelContent);
+
+    String getIndexRedis();
+
+    int updateIndexRedis();
 }

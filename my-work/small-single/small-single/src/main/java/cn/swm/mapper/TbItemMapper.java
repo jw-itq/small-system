@@ -3,6 +3,8 @@ package cn.swm.mapper;
 import cn.swm.pojo.TbItem;
 import cn.swm.pojo.TbItemExample;
 import java.util.List;
+
+import cn.swm.pojo.front.SearchItem;
 import org.apache.ibatis.annotations.Param;
 
 public interface TbItemMapper {
@@ -31,4 +33,12 @@ public interface TbItemMapper {
 //-------
     List<TbItem> selectItemByCondition(@Param("cid") int cid, @Param("search") String search,
                                    @Param("orderCol") String orderCol, @Param("orderDir") String orderDir);
+
+    SearchItem getItemById(@Param("id")long id);
+
+    List<SearchItem> getItemList();
+
+    List<TbItem> getSearchItemList(@Param("cid") int cid,@Param("orderCol") String orderColume,
+                                   @Param("orderDir") String orderDir, @Param("searchKey") String searchKey,
+                                   @Param("minDate") String minDate,@Param("maxDate") String maxDate);
 }

@@ -148,7 +148,7 @@
                 digits:true,
                 required:true,
                 maxlength:3,
-            },
+            }
         },
         onkeyup:false,
         focusCleanup:false,

@@ -319,4 +319,55 @@
     ${orderCol}
     ${orderDir}
   </select>
+
+  <select id="getItemById" resultType="cn.swm.pojo.front.SearchItem">
+    select
+    a.id productId,
+    a.title productName,
+    a.sell_point subTitle,
+    a.price salePrice,
+    a.image productImageBig,
+    a.cid cid,
+    b.name categoryName
+    from tb_item a
+    left join tb_item_cat b on a.cid=b.id
+    where
+    a.status=1 and a.id=#{id}
+  </select>
+
+  <select id="getItemList" resultType="cn.swm.pojo.front.SearchItem">
+    select
+    a.id productId,
+    a.title productName,
+    a.sell_point subTitle,
+    a.price salePrice,
+    a.image productImageBig,
+    a.cid cid,
+    b.name categoryName
+    from tb_item a
+    left join tb_item_cat b on a.cid=b.id
+    where
+    a.status=1
+  </select>
+
+    <!--List<TbItem> getSearchItemList(@Param("cid") int cid,@Param("orderCol") String orderColume,
+                                   @Param("orderDir") String orderDir, @Param("searchKey") String searchKey,
+                                   @Param("minDate") String minDate,@Param("maxDate") String maxDate);-->
+    <select id="getSearchItemList" resultMap="BaseResultMap">
+        select * from tb_item
+        where (title like #{searchKey}
+        or sell_point like #{searchKey}
+        or price like #{searchKey}
+        or id like #{searchKey})
+        <if test="cid != -1">
+        AND cid = #{cid}
+        </if>
+        <if test="minDate != null and minDate != '' and maxDate != null and maxDate != ''">
+            AND created BETWEEN #{minDate} AND #{maxDate}
+        </if>
+        order by
+        #{orderCol}
+        #{orderDir}
+
+    </select>
 </mapper>

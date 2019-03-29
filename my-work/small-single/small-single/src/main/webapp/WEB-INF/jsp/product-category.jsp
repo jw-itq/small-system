@@ -129,7 +129,9 @@
             dblClickExpand: true,
             showLine: true,
             selectedMulti: false
+            //fontCss : {color:"#ff0011",background:"blue"}
         },
+
         data: {
             simpleData: {
                 enable:true,
@@ -177,6 +179,7 @@
             }
         }
     };
+
 
     function changeSwitch1(value){
         if(value==1){
@@ -267,13 +270,13 @@
             return;
         }
         isRoot=false;
-        layer_show(title,url,700,350);
+        layer_show(title,url,700,400);
     }
 
     /*根节点分类-添加*/
     function categoryRootAdd(title,url){
         isRoot=true;
-        layer_show(title,url,700,350);
+        layer_show(title,url,700,400);
     }
 
     /*分类-删除*/

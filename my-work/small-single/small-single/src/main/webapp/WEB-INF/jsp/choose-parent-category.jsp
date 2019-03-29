@@ -61,8 +61,11 @@
         },
         callback: {
             beforeClick: function(treeId, treeNode) {
+
                 if (treeNode.isParent) {
-                    parent.setParentId(treeNode.id,treeNode.name);
+                    parent.document.getElementById("parentId").value=treeNode.id;
+                    parent.document.getElementById("parentName").value=treeNode.name;
+                    //parent.setParentId(treeNode.id,treeNode.name);
                     var index = parent.layer.getFrameIndex(window.name);
                     parent.layer.close(index);
                     return false;

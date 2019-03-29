@@ -1,18 +1,30 @@
 package cn.swm.controller;
 
+import cn.swm.mapper.TbPanelContentMapper;
+import cn.swm.mapper.TbPanelMapper;
+import cn.swm.pojo.TbItem;
+import cn.swm.pojo.TbPanelContent;
+import cn.swm.pojo.TbPanelContentExample;
+import cn.swm.pojo.TbPanelExample;
 import cn.swm.pojo.common.DataTableResult;
+import cn.swm.pojo.common.Result;
+import cn.swm.pojo.common.ZTreeNode;
+import cn.swm.pojo.dto.ItemDto;
 import cn.swm.service.ItemService;
+import cn.swm.utils.ResultUtil;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 public class ItemController {
 
     @Autowired
     private ItemService itemService;
+
+    @Autowired
+    private TbPanelContentMapper tbPanelContentMapper;
 
 
     /**
@@ -99,4 +111,105 @@ public class ItemController {
         DataTableResult result = itemService.getItemList(draw,start,length,cid,search,orderColumn,orderDir);
         return result;
     }
+
+    @RequestMapping(value = "/item/count",method = RequestMethod.GET)
+    public DataTableResult getItemCount(){
+        return itemService.getAllItemCount();
+    }
+
+    @RequestMapping(value = "/item/stop/{id}",method = RequestMethod.PUT)
+    public Result<Object> stopItem(@PathVariable("id")long id){
+        itemService.alertItemState(id,0);
+        return new ResultUtil<Object>().setData(null);
+    }
+
+    @RequestMapping(value = "/item/start/{id}",method = RequestMethod.PUT)
+    public Result<Object> startItem(@PathVariable("id")long id){
+        itemService.alertItemState(id,1);
+        return new ResultUtil<Object>().setData(null);
+    }
+
+    @RequestMapping(value = "/item/{id}",method = RequestMethod.GET)
+    public Result<ItemDto> getItemById(@PathVariable("id")long id){
+        ItemDto itemDto = itemService.getItemById(id);
+        return new ResultUtil<ItemDto>().setData(itemDto);
+    }
+
+    @RequestMapping(value = "/item/update/{id}",method = RequestMethod.POST)
+    public Result<TbItem> updateItem(@PathVariable("id")long id,ItemDto itemDto){
+        TbItem tbItem = itemService.updateItem(id,itemDto);
+        return new ResultUtil<TbItem>().setData(tbItem);
+    }
+
+    @RequestMapping(value = "/item/del/{ids}",method = RequestMethod.DELETE)
+    public Result<Object> deleteItemById(@PathVariable("ids")long[] ids){
+
+        //判断首页是否关联，如果首页关联了商品，就不能在这里删除，要先把首页的配置信息删除
+        for(long id : ids){
+            TbPanelContentExample tbPanelContentExample = new TbPanelContentExample();
+            TbPanelContentExample.Criteria criteria = tbPanelContentExample.createCriteria();
+            criteria.andProductIdEqualTo(id);
+            List<TbPanelContent> list = tbPanelContentMapper.selectByExample(tbPanelContentExample);
+            if(list!=null&&list.size()>0){
+                return new ResultUtil<Object>().setErrorMsg("删除失败！这个商品是首页展示中关联的商品，请先从首页配置中删除关联");
+            }
+        }
+
+        for(long id : ids){
+            itemService.deleteItemById(id);
+        }
+        return new ResultUtil<Object>().setData(null);
+    }
+
+    @RequestMapping(value = "/item/add",method = RequestMethod.POST)
+    public Result<Object> addItem(ItemDto itemDto){
+        itemService.addItem(itemDto);
+        return new ResultUtil<Object>().setData(null);
+    }
+
+    /**
+     * 多条件分页查询
+     * var param = {
+     *                 "searchKey": searchKey,
+     *                 "minDate": minDate,
+     *                 "maxDate":maxDate,
+     *                 "cid":cid
+     *             };
+     */
+
+    /**
+     *
+     * @param draw 浏览器cache的编号，递增不能重复
+     * @param start 其实位置
+     * @param length 预读长度=预读的页数*每页的条数
+     * @param cid 根据类别来查询，前台初始化为-1
+     * @param search 表格查询的条件
+     * @param orderCol 排序的字段
+     * @param orderDir 排序的方式
+     * @param searchKey 用户输入的查询条件
+     * @param minDate 查询最小的日期
+     * @param maxDate 查询最大的日期
+     * @return
+     */
+    @RequestMapping(value = "/item/listSearch",method = RequestMethod.GET)
+    public DataTableResult getSearchItemList(int draw, int start, int length, int cid, @RequestParam("search[value]") String search,
+                                             @RequestParam("order[0][column]") int orderCol, @RequestParam("order[0][dir]") String orderDir,
+                                             String searchKey,String minDate,String maxDate){
+        //获取客户端需要排序的列
+        String[] cols = {"checkbox","id", "image", "title", "sell_point", "price", "created", "updated", "status"};
+        String orderColume = cols[orderCol];
+        if(orderColume==null){
+            orderColume = "created";
+        }
+
+        if(orderDir==null){
+            orderDir = "desc";
+        }
+
+        if(!search.isEmpty()){
+            searchKey = search;
+        }
+        return itemService.getSearchItemList(draw,start,length,cid,orderColume,orderDir,searchKey,minDate,maxDate);
+    }
+
 }

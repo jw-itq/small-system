@@ -130,7 +130,7 @@
             },
             error:function(XMLHttpRequest) {
                 layer.alert('数据处理失败! 错误码:'+XMLHttpRequest.status,{title: '错误信息',icon: 2});
-            },
+            }
         });
     }
 
@@ -140,7 +140,7 @@
             "processing": true,//加载显示提示
             "ajax": {
                 url: url,
-                type: 'GET',
+                type: 'GET'
             },
             "columns": [
                 { "data": null,

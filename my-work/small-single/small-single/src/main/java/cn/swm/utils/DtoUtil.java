@@ -2,6 +2,7 @@ package cn.swm.utils;
 
 import cn.swm.pojo.*;
 import cn.swm.pojo.common.ZTreeNode;
+import cn.swm.pojo.dto.ItemDto;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -42,7 +43,7 @@ public class DtoUtil {
         }
 
         return tbMember;
-    }
+    }*/
 
     public static TbItem ItemDto2TbItem(ItemDto itemDto){
 
@@ -82,7 +83,7 @@ public class DtoUtil {
         }
 
         return itemDto;
-    }*/
+    }
 
 
     public static ZTreeNode TbPanel2ZTreeNode(TbPanel tbPanel){
@@ -90,7 +91,7 @@ public class DtoUtil {
         ZTreeNode zTreeNode =new ZTreeNode();
 
         zTreeNode.setId(tbPanel.getId());
-        zTreeNode.setParent(false);
+        zTreeNode.setIsParent(false);
         zTreeNode.setpId(0);
         zTreeNode.setName(tbPanel.getName());
         zTreeNode.setSortOrder(tbPanel.getSortOrder());
@@ -108,11 +109,11 @@ public class DtoUtil {
         ZTreeNode zTreeNode =new ZTreeNode();
 
         zTreeNode.setId(Math.toIntExact(tbItemCat.getId()));
-        zTreeNode.setStatus(tbItemCat.getStatus());
+        zTreeNode.setStatus(tbItemCat.getStatus()==null?1:tbItemCat.getStatus());
         zTreeNode.setSortOrder(tbItemCat.getSortOrder());
         zTreeNode.setName(tbItemCat.getName());
         zTreeNode.setpId(Math.toIntExact(tbItemCat.getParentId()));
-        zTreeNode.setParent(tbItemCat.getIsParent());
+        zTreeNode.setIsParent(tbItemCat.getIsParent());
         zTreeNode.setRemark(tbItemCat.getRemark());
 
         return zTreeNode;

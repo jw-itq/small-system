@@ -27,6 +27,7 @@
     <form action="" method="post" class="form form-horizontal" id="category-add">
         <input type="text" hidden class="input-text" value="0" id="parentId" name="parentId">
         <input type="text" hidden class="input-text" value="true" id="isParent" name="isParent">
+        <input type="text" hidden class="input-text" value="1" id="status" name="status">
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2">
                 <span class="c-red">*</span>
@@ -41,6 +42,14 @@
                 <div id="parentSwitch" class="switch" data-on-label="是" data-on="info" data-off-label="否">
                     <input type="checkbox" checked />
                 </div>
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">
+                <span class="c-red">*</span>
+                排序优先值：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <input type="text" class="input-text" value="" placeholder="请输入0~9999，值越小排序越前" id="sortOrder" name="sortOrder">
             </div>
         </div>
         <div class="row cl">

@@ -10,6 +10,8 @@ import cn.swm.pojo.TbPanelContentExample;
 import cn.swm.pojo.common.DataTableResult;
 import cn.swm.service.ContentService;
 import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -20,6 +22,8 @@ import java.util.List;
 
 @Service
 public class ContentServiceImpl implements ContentService {
+
+    private final static Logger log = LoggerFactory.getLogger(PanelServiceImpl.class);
 
     @Autowired
     private TbPanelContentMapper tbPanelContentMapper;
@@ -139,6 +143,30 @@ public class ContentServiceImpl implements ContentService {
             updateNavListRedis();
         }
         //同步首页的缓存
+        deleteHomeRedis();
+        return 1;
+    }
+
+    /**
+     * 获得首页的缓存，首页缓存的值是-PRODUCT_HOME
+     * @return
+     */
+    @Override
+    public String getIndexRedis() {
+        try {
+            String result = jedisClient.get(PRODUCT_HOME);
+        }catch (Exception e){
+            log.error(e.toString());
+        }
+        return "";
+    }
+
+    /**
+     * 刷新首页的缓存
+     * @return
+     */
+    @Override
+    public int updateIndexRedis() {
         deleteHomeRedis();
         return 1;
     }

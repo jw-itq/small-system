@@ -52,4 +52,11 @@ public class PanelController {
         return list;
     }
 
+//    首页内容
+
+    @RequestMapping(value = "/panel/index/list",method = RequestMethod.GET)
+    public List<ZTreeNode> getPanelIndexList(){
+        List<ZTreeNode> result =  panelService.getPanelList(0,false);
+        return result;
+    }
 }
