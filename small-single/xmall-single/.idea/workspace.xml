@@ -2,50 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a381b77-a23d-43a2-8ee3-a64e08de9b36" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/common/constant/CommonConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/common/constant/CountConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/common/constant/DictConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/common/test/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/controller/DictController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/controller/ExpressController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/controller/MemberController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/pojo/dto/EsCount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/pojo/dto/EsInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/pojo/dto/MemberDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/pojo/dto/OrderDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/service/DictService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/service/ExpressService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/service/MemberService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/service/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/service/impl/DictServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/service/impl/ExpressServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/service/impl/MemberServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/utils/HttpUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../data/xmall" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/xmall" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../data/xmall-front" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/xmall-front" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../my-work/small-single/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/small-single.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/small-single.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/controller/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/controller/ItemController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/mapper/TbMemberMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/mapper/TbMemberMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/mapper/TbMemberMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/mapper/TbMemberMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/mapper/TbOrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/mapper/TbOrderMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/mapper/TbOrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/mapper/TbOrderMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/service/SearchItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/service/SearchItemService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/service/impl/SearchItemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/service/impl/SearchItemServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/utils/DtoUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/utils/DtoUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/resources/conf/resource.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/resources/conf/resource.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/webapp/WEB-INF/jsp/member-add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/webapp/WEB-INF/jsp/member-add.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/controller/ItemController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/controller/ItemController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/mapper/TbMemberMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/mapper/TbMemberMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/controller/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/service/impl/MemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/service/impl/MemberServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/controller/MemberController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/controller/MemberController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/mapper/TbMemberMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/mapper/TbMemberMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/mapper/TbOrderMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/mapper/TbOrderMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/mapper/TbOrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/mapper/TbOrderMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/service/SearchItemService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/service/SearchItemService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/service/impl/SearchItemServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/service/impl/SearchItemServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/conf/resource.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/conf/resource.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/service/MemberService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/service/MemberService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/service/impl/MemberServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/service/impl/MemberServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/utils/DtoUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/utils/DtoUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -87,11 +54,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/exrick/service/impl/MemberServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
               <caret line="276" column="9" lean-forward="true" selection-start-line="276" selection-start-column="9" selection-end-line="276" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/exrick/controller/MemberController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-76">
+              <caret line="110" column="33" lean-forward="true" selection-start-line="110" selection-start-column="33" selection-end-line="110" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -138,9 +114,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="4">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="y" value="28" />
-    <option name="width" value="856" />
+    <option name="width" value="822" />
     <option name="height" value="1018" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -296,7 +272,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553955673552" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553957014604" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -361,18 +337,17 @@
       <workItem from="1553732537650" duration="12212000" />
       <workItem from="1553767906213" duration="11270000" />
       <workItem from="1553828314999" duration="24439000" />
-      <workItem from="1553907430824" duration="23424000" />
+      <workItem from="1553907430824" duration="24432000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124061000" />
+    <option name="totallyTimeSpent" value="125069000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="28" width="856" height="1018" extended-state="4" />
-    <editor active="true" />
+    <frame x="0" y="28" width="1920" height="1018" extended-state="7" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.34950247" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3490364" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -897,17 +872,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/exrick/controller/MemberController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="94" column="33" lean-forward="true" selection-start-line="94" selection-start-column="33" selection-end-line="94" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/exrick/service/impl/MemberServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="276" column="9" lean-forward="true" selection-start-line="276" selection-start-column="9" selection-end-line="276" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/exrick/controller/MemberController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-76">
+          <caret line="110" column="33" lean-forward="true" selection-start-line="110" selection-start-column="33" selection-end-line="110" selection-end-column="33" />
         </state>
       </provider>
     </entry>

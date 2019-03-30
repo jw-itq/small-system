@@ -63,11 +63,11 @@ public class MemberController {
         return new ResultUtil<TbMember>().setData(tbMember);
     }
 
-    @RequestMapping(value = "/member/start/{id}",method = RequestMethod.PUT)
+    /*@RequestMapping(value = "/member/start/{id}",method = RequestMethod.PUT)
     public Result<TbMember> startMember(@PathVariable("id")long id){
         TbMember tbMember = memberService.stopMember(id,1);
         return new ResultUtil<TbMember>().setData(tbMember);
-    }
+    }*/
 
     @RequestMapping(value = "/member/edit/{id}/username",method = RequestMethod.GET)
     public Boolean validateEditUsername(@PathVariable("id")long id,String username){

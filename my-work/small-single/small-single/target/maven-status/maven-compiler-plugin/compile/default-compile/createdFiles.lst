@@ -17,13 +17,14 @@ cn/swm/pojo/TbUserExample$GeneratedCriteria.class
 cn/swm/pojo/TbBaseExample$Criteria.class
 cn/swm/pojo/TbOrderShippingExample.class
 cn/swm/pojo/TbExpress.class
-cn/swm/pojo/TbLog.class
 cn/swm/pojo/TbDict.class
+cn/swm/pojo/TbLog.class
 cn/swm/common/shiro/MyShiroFilterFactoryBean.class
 cn/swm/common/shiro/MyRealm.class
 cn/swm/mapper/TbPanelMapper.class
 cn/swm/pojo/TbRolePermExample.class
 cn/swm/pojo/TbRoleExample$Criteria.class
+cn/swm/pojo/dto/MemberDto.class
 cn/swm/pojo/TbRole.class
 cn/swm/pojo/TbPanelContentExample$GeneratedCriteria.class
 cn/swm/utils/GeetestLib.class
@@ -111,8 +112,8 @@ cn/swm/pojo/TbMemberExample$Criteria.class
 cn/swm/mapper/TbOrderItemMapper.class
 cn/swm/pojo/TbPanelExample$Criteria.class
 cn/swm/pojo/TbPanelContent.class
-cn/swm/pojo/TbUserExample.class
 cn/swm/pojo/TbMemberExample.class
+cn/swm/pojo/TbUserExample.class
 cn/swm/common/jedis/JedisClientPool.class
 cn/swm/pojo/TbBaseExample$GeneratedCriteria.class
 cn/swm/pojo/TbBaseExample.class
@@ -135,8 +136,8 @@ cn/swm/utils/QiniuUtil.class
 cn/swm/mapper/TbExpressMapper.class
 cn/swm/pojo/TbShiroFilterExample$GeneratedCriteria.class
 cn/swm/pojo/TbThanks.class
-cn/swm/service/impl/ItemCatServiceImpl.class
 cn/swm/controller/SystemController.class
+cn/swm/service/impl/ItemCatServiceImpl.class
 cn/swm/mapper/TbLogMapper.class
 cn/swm/pojo/TbOrderShipping.class
 cn/swm/controller/PageController.class

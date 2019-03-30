@@ -40,7 +40,7 @@ public class MemberServiceImpl implements MemberService {
                                          String minDate, String maxDate, String orderCol, String orderDir) {
         DataTableResult result = new DataTableResult();
         try {
-            List<TbMember> list = tbMemberMapper.getSearchMemberList(searchKey,minDate,maxDate,orderCol,orderDir);
+            List<TbMember> list = tbMemberMapper.getSearchMemberList("%"+searchKey+"%",minDate,maxDate,orderCol,orderDir);
             PageHelper.startPage(start/length+1,length);
             PageInfo pageInfo = new PageInfo(list);
             result.setRecordsFiltered((int) pageInfo.getTotal());
@@ -278,6 +278,7 @@ public class MemberServiceImpl implements MemberService {
      */
     @Override
     public int addMember(MemberDto memberDto) {
+        System.out.println(memberDto.toString());
         TbMember tbMember = DtoUtil.MemberDto2Member(memberDto);
 
         if(getMemberByUsername(tbMember.getUsername())!=null){
@@ -320,7 +321,7 @@ public class MemberServiceImpl implements MemberService {
     public DataTableResult getMemberRemoveList(int draw, int start, int length, String searchKey, String minDate, String maxDate, String orderCol, String orderDir) {
         DataTableResult result = new DataTableResult();
         try {
-            List<TbMember> list = tbMemberMapper.getSearchRemoveMemberList(searchKey,minDate,maxDate,orderCol,orderDir);
+            List<TbMember> list = tbMemberMapper.getSearchRemoveMemberList("%"+searchKey+"%",minDate,maxDate,orderCol,orderDir);
             PageHelper.startPage(start/length+1,length);
             PageInfo pageInfo = new PageInfo(list);
             result.setRecordsFiltered((int) pageInfo.getTotal());

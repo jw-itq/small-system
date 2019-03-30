@@ -384,7 +384,7 @@
                                              @Param("maxDate") String maxDate,
                                              @Param("orderCol") String orderCol,@Param("orderDir") String orderDir);
   -->
-  <select id="getSearchMemberList" parameterType="string" resultMap="BaseResultMap">
+  <select id="getSearchRemoveMemberList" parameterType="string" resultMap="BaseResultMap">
     SELECT * FROM tb_member
     WHERE
     state = 2
