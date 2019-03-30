@@ -9,8 +9,10 @@ import cn.swm.pojo.TbPanelExample;
 import cn.swm.pojo.common.DataTableResult;
 import cn.swm.pojo.common.Result;
 import cn.swm.pojo.common.ZTreeNode;
+import cn.swm.pojo.dto.EsInfo;
 import cn.swm.pojo.dto.ItemDto;
 import cn.swm.service.ItemService;
+import cn.swm.service.SearchItemService;
 import cn.swm.utils.ResultUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -25,6 +27,9 @@ public class ItemController {
 
     @Autowired
     private TbPanelContentMapper tbPanelContentMapper;
+
+    @Autowired
+    private SearchItemService searchItemService;
 
 
     /**
@@ -210,6 +215,21 @@ public class ItemController {
             searchKey = search;
         }
         return itemService.getSearchItemList(draw,start,length,cid,orderColume,orderDir,searchKey,minDate,maxDate);
+    }
+
+
+    //获得索引信息
+    @RequestMapping(value = "/es/getInfo",method = RequestMethod.GET)
+    public Result<Object> getESInfo(){
+        EsInfo esInfo = searchItemService.getESInfo();
+        return new ResultUtil<Object>().setData(esInfo);
+    }
+
+    //同步索引库
+    @RequestMapping(value = "/item/importIndex",method = RequestMethod.GET)
+    public Result<Object> importIndex(){
+        searchItemService.importIndex();
+        return new ResultUtil<Object>().setData(null);
     }
 
 }

@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/../data/xmall" beforeDir="false" afterPath="$PROJECT_DIR$/../data/xmall" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../data/xmall-front" beforeDir="false" afterPath="$PROJECT_DIR$/../data/xmall-front" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../my-work/small-single/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../my-work/small-single/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../my-work/small-single/small-single/src/main/webapp/WEB-INF/jsp/content-banner-add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../my-work/small-single/small-single/src/main/webapp/WEB-INF/jsp/content-banner-add.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/small-single/target/" />
@@ -51,7 +50,7 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="4">
     <option name="y" value="28" />
-    <option name="width" value="930" />
+    <option name="width" value="960" />
     <option name="height" value="1018" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -60,8 +59,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="Scope" />
+      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -132,16 +131,17 @@
       <workItem from="1553556841573" duration="771000" />
       <workItem from="1553681172131" duration="25000" />
       <workItem from="1553827174738" duration="609000" />
+      <workItem from="1553905807584" duration="612000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8287000" />
+    <option name="totallyTimeSpent" value="8899000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="28" width="930" height="1018" extended-state="4" />
+    <frame x="0" y="28" width="960" height="1018" extended-state="4" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.42482916" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.41740087" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />

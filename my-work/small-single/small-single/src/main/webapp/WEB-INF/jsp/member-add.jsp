@@ -193,6 +193,8 @@
             submitHandler:function(form){
                 var index = layer.load(3);
                 $(form).ajaxSubmit({
+                    url: "/member/add",
+                    type: "POST",
                     success: function(data) {
                         layer.close(index);
                         if(data.success==true){

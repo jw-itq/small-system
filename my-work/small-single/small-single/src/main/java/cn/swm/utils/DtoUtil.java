@@ -3,6 +3,7 @@ package cn.swm.utils;
 import cn.swm.pojo.*;
 import cn.swm.pojo.common.ZTreeNode;
 import cn.swm.pojo.dto.ItemDto;
+import cn.swm.pojo.dto.MemberDto;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -15,7 +16,7 @@ public class DtoUtil {
 
     private final static Logger log= LoggerFactory.getLogger(DtoUtil.class);
 
-   /* public static TbMember MemberDto2Member(MemberDto memberDto){
+    public static TbMember MemberDto2Member(MemberDto memberDto){
 
         TbMember tbMember =new TbMember();
 
@@ -43,7 +44,7 @@ public class DtoUtil {
         }
 
         return tbMember;
-    }*/
+    }
 
     public static TbItem ItemDto2TbItem(ItemDto itemDto){
 

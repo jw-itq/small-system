@@ -27,4 +27,13 @@ public interface TbMemberMapper {
     int updateByPrimaryKeySelective(TbMember record);
 
     int updateByPrimaryKey(TbMember record);
+
+//    ------------------
+    List<TbMember> getSearchMemberList(@Param("searchKey") String searchKey,@Param("minDate") String minDate,
+                                       @Param("maxDate") String maxDate,
+                                       @Param("orderCol") String orderCol,@Param("orderDir") String orderDir);
+
+    List<TbMember> getSearchRemoveMemberList(@Param("searchKey") String searchKey,@Param("minDate") String minDate,
+                                             @Param("maxDate") String maxDate,
+                                             @Param("orderCol") String orderCol,@Param("orderDir") String orderDir);
 }

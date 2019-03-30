@@ -27,4 +27,7 @@ public interface TbOrderMapper {
     int updateByPrimaryKeySelective(TbOrder record);
 
     int updateByPrimaryKey(TbOrder record);
+
+//    ------------------
+    List<TbOrder> selectByMulti(@Param("search")String search,@Param("orderCol") String orderCol,@Param("orderDir") String orderDir);
 }
