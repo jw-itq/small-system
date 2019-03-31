@@ -2,17 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a381b77-a23d-43a2-8ee3-a64e08de9b36" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/pojo/dto/RoleDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../data/xmall" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/xmall" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../data/xmall-front" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/xmall-front" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../my-work/small-single/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/controller/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/service/impl/MemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/service/impl/MemberServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/controller/MemberController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/controller/MemberController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/mapper/TbMemberMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/mapper/TbMemberMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/service/MemberService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/service/MemberService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/service/impl/MemberServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/service/impl/MemberServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/utils/DtoUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/utils/DtoUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/mapper/TbOrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/mapper/TbOrderMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/mapper/TbOrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/mapper/TbOrderMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/mapper/TbRoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/mapper/TbRoleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/mapper/TbRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/mapper/TbRoleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/pojo/TbRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/pojo/TbRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/webapp/WEB-INF/jsp/admin-role-edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/webapp/WEB-INF/jsp/admin-role-edit.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -55,19 +57,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/exrick/service/impl/MemberServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/exrick/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="276" column="9" lean-forward="true" selection-start-line="276" selection-start-column="9" selection-end-line="276" selection-end-column="9" />
+            <state relative-caret-position="359">
+              <caret line="166" column="36" lean-forward="true" selection-start-line="166" selection-start-column="36" selection-end-line="166" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/exrick/controller/MemberController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/exrick/service/impl/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-76">
-              <caret line="110" column="33" lean-forward="true" selection-start-line="110" selection-start-column="33" selection-end-line="110" selection-end-column="33" />
+            <state relative-caret-position="198">
+              <caret line="110" column="25" lean-forward="true" selection-start-line="110" selection-start-column="25" selection-end-line="110" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/exrick/mapper/TbRoleMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="569">
+              <caret line="179" column="11" lean-forward="true" selection-start-line="179" selection-start-column="11" selection-end-line="179" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -114,9 +125,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="4">
     <option name="y" value="28" />
-    <option name="width" value="822" />
+    <option name="width" value="960" />
     <option name="height" value="1018" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -166,6 +177,15 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="exrick" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="small-single" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xmall-single" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="exrick" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="small-single" type="b2602c69:ProjectViewProjectNode" />
@@ -272,7 +292,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553957014604" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554003962321" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -337,17 +357,18 @@
       <workItem from="1553732537650" duration="12212000" />
       <workItem from="1553767906213" duration="11270000" />
       <workItem from="1553828314999" duration="24439000" />
-      <workItem from="1553907430824" duration="24432000" />
+      <workItem from="1553907430824" duration="32477000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125069000" />
+    <option name="totallyTimeSpent" value="133114000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="28" width="1920" height="1018" extended-state="7" />
+    <frame x="0" y="28" width="960" height="1018" extended-state="4" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3490364" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.4537445" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -381,7 +402,7 @@
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34950247" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.4537445" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -507,61 +528,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/product-list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="109" column="28" lean-forward="true" selection-start-line="109" selection-start-column="28" selection-end-line="109" selection-end-column="28" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#2;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/exrick/pojo/common/DataTablesResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/mavenRe/repository/com/github/pagehelper/pagehelper/4.1.6/pagehelper-4.1.6.jar!/com/github/pagehelper/PageHelper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="53" column="27" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
-          <folding>
-            <element signature="e#1601#1602#0" expanded="true" />
-            <element signature="e#1658#1659#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/exrick/service/ItemService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-105">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://a657ae0e-bc69-409f-994e-f147992f6637/schema/small/table/tb_panel_content">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/exrick/controller/ContentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="33" column="55" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/exrick/controller/CountController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -872,6 +838,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/exrick/controller/MemberController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="126" column="53" lean-forward="true" selection-start-line="126" selection-start-column="53" selection-end-line="126" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/exrick/service/impl/MemberServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -879,10 +852,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/exrick/controller/MemberController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/exrick/pojo/dto/RoleDto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-76">
-          <caret line="110" column="33" lean-forward="true" selection-start-line="110" selection-start-column="33" selection-end-line="110" selection-end-column="33" />
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/exrick/mapper/TbRoleMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/exrick/mapper/TbRoleMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="569">
+          <caret line="179" column="11" lean-forward="true" selection-start-line="179" selection-start-column="11" selection-end-line="179" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/exrick/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="166" column="36" lean-forward="true" selection-start-line="166" selection-start-column="36" selection-end-line="166" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/exrick/pojo/TbRole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/exrick/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="110" column="25" lean-forward="true" selection-start-line="110" selection-start-column="25" selection-end-line="110" selection-end-column="25" />
         </state>
       </provider>
     </entry>

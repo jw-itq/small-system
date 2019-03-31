@@ -150,7 +150,8 @@
                 required:true,
                 minlength:1,
                 maxlength:20,
-                remote: "/user/edit/roleName/"+parent.roleId
+                //remote: "/user/edit/roleName/"+parent.roleId
+                remote: "/user/roleName"
             },
         },
         messages: {

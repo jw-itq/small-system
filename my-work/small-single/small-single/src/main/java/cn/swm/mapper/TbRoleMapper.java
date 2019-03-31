@@ -27,4 +27,9 @@ public interface TbRoleMapper {
     int updateByPrimaryKeySelective(TbRole record);
 
     int updateByPrimaryKey(TbRole record);
+
+//    -------------------
+    List<String> getPermsByRoleId(@Param("roleId")Integer roleId);
+
+    List<String> getUserByRoleId(@Param("roleId")Integer roleId);
 }

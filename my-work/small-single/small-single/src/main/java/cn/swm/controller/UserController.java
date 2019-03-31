@@ -1,7 +1,10 @@
 package cn.swm.controller;
 
 import cn.swm.mapper.TbUserMapper;
+import cn.swm.pojo.TbPermission;
+import cn.swm.pojo.TbRole;
 import cn.swm.pojo.TbUser;
+import cn.swm.pojo.common.DataTableResult;
 import cn.swm.pojo.common.Result;
 import cn.swm.service.UserService;
 import cn.swm.utils.GeetestLib;
@@ -12,12 +15,11 @@ import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.DigestUtils;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
+import java.util.List;
 
 @RestController
 @Api(description = "管理员管理")
@@ -117,5 +119,80 @@ public class UserController {
         Subject subject = SecurityUtils.getSubject();
         subject.logout();
         return new ResultUtil<Object>().setData(null);
+    }
+
+    @RequestMapping(value = "/user/roleList",method = RequestMethod.GET)
+    public DataTableResult getRoleList(){
+        return userService.getRoleList();
+    }
+
+    @RequestMapping(value = "/user/roleCount",method = RequestMethod.GET)
+    public Result<Object> getRoleCount(){
+        Long count = userService.getRoleCount();
+        return new ResultUtil<Object>().setData(count);
+    }
+
+    @RequestMapping(value = "/user/permissionList",method = RequestMethod.GET)
+    public DataTableResult getPermsList(){
+        return userService.getPermsList();
+    }
+
+    /*@RequestMapping(value = "/user/edit/roleName/{roleId}",method = RequestMethod.GET)
+    public boolean isRoleName(@PathVariable("roleId")int roleId,String name){
+        return userService.isRoleName(roleId,name);
+    }*/
+
+    @RequestMapping(value = "/user/updateRole",method = RequestMethod.POST)
+    public Result<Object> updateRolePerms(@ModelAttribute TbRole tbRole){
+        userService.updateRolePerms(tbRole);
+        return new ResultUtil<Object>().setData(null);
+    }
+
+    @RequestMapping(value = "/user/delRole/{ids}",method = RequestMethod.DELETE)
+    public Result<Object> deleteRoleById(@PathVariable("ids")int[] ids){
+        for(int id : ids){
+            if(userService.deleteRole(id)!=1){
+               return new ResultUtil<Object>().setErrorMsg("id为"+id+"的角色正在被使用中，不能删除");
+            }
+        }
+
+        return new ResultUtil<Object>().setData(null);
+    }
+
+    @RequestMapping(value = "/user/roleName",method = RequestMethod.GET)
+    public boolean isRoleName(String name){
+        return userService.isRoleName(name);
+    }
+
+    @RequestMapping(value = "/user/addRole",method = RequestMethod.POST)
+    public Result<Object> addRole(@ModelAttribute TbRole tbRole){
+        userService.addRole(tbRole);
+        return new ResultUtil<Object>().setData(null);
+    }
+
+    @RequestMapping(value = "/user/permissionCount",method = RequestMethod.GET)
+    public Result<Object> getPermissonCount(){
+        Long count = userService.getPermissonCount();
+        return new ResultUtil<Object>().setData(count);
+    }
+
+    @RequestMapping(value = "/user/addPermission",method = RequestMethod.POST)
+    public Result<Object> addPermission(@ModelAttribute TbPermission tbPermission){
+        userService.addPermission(tbPermission);
+        return new ResultUtil<Object>().setData(null);
+    }
+
+    @RequestMapping(value = "/user/updatePermission",method = RequestMethod.POST)
+    public Result<Object> updatePermission(@ModelAttribute TbPermission tbPermission){
+        userService.updatePermission(tbPermission);
+        return new ResultUtil<Object>().setData(null);
+    }
+
+    @RequestMapping(value = "/user/delPermission/{ids}",method = RequestMethod.GET)
+    public Result<Object> deletepermission(@PathVariable("ids")int[] ids){
+       for(int id : ids){
+           userService.deletepermission(id);
+       }
+       return new ResultUtil<Object>().setData(null);
     }
 }
