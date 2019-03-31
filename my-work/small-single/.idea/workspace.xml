@@ -2,19 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33bc3088-6d0c-4cf6-b35b-f4ec7c52f9a7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/small-single/src/main/java/cn/swm/pojo/dto/RoleDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../data/xmall" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/xmall" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../data/xmall-front" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/xmall-front" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/small-single/src/main/java/cn/swm/common/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/small-single/src/main/java/cn/swm/common/test/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/small-single/src/main/java/cn/swm/controller/ExpressController.java" beforeDir="false" afterPath="$PROJECT_DIR$/small-single/src/main/java/cn/swm/controller/ExpressController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/small-single/src/main/java/cn/swm/controller/SystemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/small-single/src/main/java/cn/swm/controller/SystemController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/small-single/src/main/java/cn/swm/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/small-single/src/main/java/cn/swm/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-single/src/main/java/cn/swm/mapper/TbOrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/small-single/src/main/java/cn/swm/mapper/TbOrderMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-single/src/main/java/cn/swm/mapper/TbOrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/small-single/src/main/java/cn/swm/mapper/TbOrderMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-single/src/main/java/cn/swm/mapper/TbRoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/small-single/src/main/java/cn/swm/mapper/TbRoleMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-single/src/main/java/cn/swm/mapper/TbRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/small-single/src/main/java/cn/swm/mapper/TbRoleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-single/src/main/java/cn/swm/pojo/TbRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/small-single/src/main/java/cn/swm/pojo/TbRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/small-single/src/main/java/cn/swm/mapper/TbUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/small-single/src/main/java/cn/swm/mapper/TbUserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/small-single/src/main/java/cn/swm/pojo/TbUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/small-single/src/main/java/cn/swm/pojo/TbUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/small-single/src/main/java/cn/swm/service/ExpressService.java" beforeDir="false" afterPath="$PROJECT_DIR$/small-single/src/main/java/cn/swm/service/ExpressService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/small-single/src/main/java/cn/swm/service/SystemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/small-single/src/main/java/cn/swm/service/SystemService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/small-single/src/main/java/cn/swm/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/small-single/src/main/java/cn/swm/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/small-single/src/main/java/cn/swm/service/impl/ExpressServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/small-single/src/main/java/cn/swm/service/impl/ExpressServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/small-single/src/main/java/cn/swm/service/impl/SystemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/small-single/src/main/java/cn/swm/service/impl/SystemServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/small-single/src/main/java/cn/swm/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/small-single/src/main/java/cn/swm/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/small-single/src/main/webapp/WEB-INF/jsp/admin-add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/small-single/src/main/webapp/WEB-INF/jsp/admin-add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/small-single/src/main/webapp/WEB-INF/jsp/admin-edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/small-single/src/main/webapp/WEB-INF/jsp/admin-edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/small-single/src/main/webapp/WEB-INF/jsp/admin-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/small-single/src/main/webapp/WEB-INF/jsp/admin-list.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/small-single/src/main/webapp/WEB-INF/jsp/admin-role-edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/small-single/src/main/webapp/WEB-INF/jsp/admin-role-edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/small-single/target/classes/cn/swm/common/test/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/small-single/target/classes/cn/swm/common/test/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/small-single/target/classes/cn/swm/controller/ExpressController.class" beforeDir="false" afterPath="$PROJECT_DIR$/small-single/target/classes/cn/swm/controller/ExpressController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/small-single/target/classes/cn/swm/controller/SystemController.class" beforeDir="false" afterPath="$PROJECT_DIR$/small-single/target/classes/cn/swm/controller/SystemController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/small-single/target/classes/cn/swm/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/small-single/target/classes/cn/swm/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/small-single/target/classes/cn/swm/mapper/TbOrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/small-single/target/classes/cn/swm/mapper/TbOrderMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/small-single/target/classes/cn/swm/mapper/TbRoleMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/small-single/target/classes/cn/swm/mapper/TbRoleMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/small-single/target/classes/cn/swm/mapper/TbRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/small-single/target/classes/cn/swm/mapper/TbRoleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/small-single/target/classes/cn/swm/pojo/TbRole.class" beforeDir="false" afterPath="$PROJECT_DIR$/small-single/target/classes/cn/swm/pojo/TbRole.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/small-single/target/classes/cn/swm/pojo/TbUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/small-single/target/classes/cn/swm/pojo/TbUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/small-single/target/classes/cn/swm/service/ExpressService.class" beforeDir="false" afterPath="$PROJECT_DIR$/small-single/target/classes/cn/swm/service/ExpressService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/small-single/target/classes/cn/swm/service/SystemService.class" beforeDir="false" afterPath="$PROJECT_DIR$/small-single/target/classes/cn/swm/service/SystemService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/small-single/target/classes/cn/swm/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/small-single/target/classes/cn/swm/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/small-single/target/classes/cn/swm/service/impl/ExpressServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/small-single/target/classes/cn/swm/service/impl/ExpressServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/small-single/target/classes/cn/swm/service/impl/SystemServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/small-single/target/classes/cn/swm/service/impl/SystemServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/small-single/target/classes/cn/swm/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/small-single/target/classes/cn/swm/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/small-single/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/small-single/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../small-single/xmall-single/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../small-single/xmall-single/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/small-single/target/" />
@@ -57,15 +79,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/small-single/src/main/webapp/WEB-INF/jsp/admin-permission.jsp">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/small-single/src/main/webapp/WEB-INF/jsp/admin-role-edit.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-285">
-              <caret line="140" column="47" lean-forward="true" selection-start-line="140" selection-start-column="22" selection-end-line="140" selection-end-column="47" />
-              <folding>
-                <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#1;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="495">
+              <caret line="159" column="15" lean-forward="true" selection-start-line="159" selection-start-column="15" selection-end-line="159" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -73,21 +91,33 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/small-single/src/main/java/cn/swm/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="749">
-              <caret line="195" column="7" selection-start-line="195" selection-start-column="7" selection-end-line="195" selection-end-column="7" />
+            <state relative-caret-position="218">
+              <caret line="214" column="5" lean-forward="true" selection-start-line="214" selection-start-column="5" selection-end-line="214" selection-end-column="5" />
               <folding>
-                <element signature="e#4879#4880#0" expanded="true" />
-                <element signature="e#4928#4929#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#4940#4941#0" expanded="true" />
+                <element signature="e#4989#4990#0" expanded="true" />
+                <element signature="e#7500#7501#0" expanded="true" />
+                <element signature="e#7548#7549#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/small-single/src/main/java/cn/swm/service/UserService.java">
+        <entry file="file://$PROJECT_DIR$/small-single/src/main/java/cn/swm/controller/SystemController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+            <state relative-caret-position="499">
+              <caret line="88" column="9" lean-forward="true" selection-start-line="88" selection-start-column="9" selection-end-line="88" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4a7b4020-2379-4bec-9cd9-7dddcd0a6567/console.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="32" selection-start-line="32" selection-end-line="32" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -95,8 +125,74 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/small-single/src/main/java/cn/swm/service/impl/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="779">
-              <caret line="272" column="17" selection-start-line="272" selection-start-column="17" selection-end-line="272" selection-end-column="17" />
+            <state relative-caret-position="233">
+              <caret line="323" column="50" selection-start-line="323" selection-start-column="50" selection-end-line="323" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#903#904#0" expanded="true" />
+                <element signature="e#957#958#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/small-single/src/main/java/cn/swm/service/impl/SystemServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="331">
+              <caret line="100" column="9" lean-forward="true" selection-start-line="100" selection-start-column="9" selection-end-line="100" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/small-single/src/main/webapp/WEB-INF/jsp/admin-list.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="410">
+              <caret line="246" column="45" lean-forward="true" selection-start-line="246" selection-start-column="45" selection-end-line="246" selection-end-column="45" />
+              <folding>
+                <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#3;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#3;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/small-single/src/main/webapp/WEB-INF/jsp/system-log.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="204" column="35" selection-start-line="204" selection-start-column="22" selection-end-line="204" selection-end-column="35" />
+              <folding>
+                <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/small-single/src/main/webapp/WEB-INF/jsp/admin-edit.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="121" column="21" lean-forward="true" selection-start-line="121" selection-start-column="21" selection-end-line="121" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/small-single/src/main/java/cn/swm/common/test/Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -114,12 +210,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>XMall</find>
-      <find>table</find>
-      <find>add</find>
-      <find>layer_show</find>
-      <find>del</find>
-      <find>thanks</find>
       <find>content_category_add</find>
       <find>currentCount</find>
       <find>initTable</find>
@@ -144,6 +234,12 @@
       <find>exrick</find>
       <find>orderPrint</find>
       <find>searchItem</find>
+      <find>DataTableResult</find>
+      <find>up</find>
+      <find>stop</find>
+      <find>getUserL</find>
+      <find>getUser</find>
+      <find>getAll</find>
     </findStrings>
     <replaceStrings>
       <replace>SMall</replace>
@@ -157,20 +253,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/small-single/src/main/java/cn/swm/service/impl/ItemCatServiceImpl.java" />
-        <option value="$PROJECT_DIR$/small-single/src/main/webapp/WEB-INF/jsp/product-category-add.jsp" />
-        <option value="$PROJECT_DIR$/small-single/src/main/webapp/WEB-INF/jsp/product-category.jsp" />
-        <option value="$PROJECT_DIR$/small-single/src/main/webapp/WEB-INF/jsp/product-list.jsp" />
-        <option value="$PROJECT_DIR$/small-single/src/main/java/cn/swm/pojo/dto/ItemDto.java" />
-        <option value="$PROJECT_DIR$/small-single/src/main/java/cn/swm/pojo/front/SearchItem.java" />
-        <option value="$PROJECT_DIR$/small-single/src/main/java/cn/swm/utils/IDUtil.java" />
-        <option value="$PROJECT_DIR$/small-single/src/main/java/cn/swm/service/ItemService.java" />
         <option value="$PROJECT_DIR$/small-single/src/main/java/cn/swm/mapper/TbItemMapper.java" />
         <option value="$PROJECT_DIR$/small-single/src/main/java/cn/swm/mapper/TbItemMapper.xml" />
         <option value="$PROJECT_DIR$/small-single/src/main/java/cn/swm/service/impl/ItemServiceImpl.java" />
-        <option value="$PROJECT_DIR$/small-single/src/main/java/cn/swm/service/ExpressService.java" />
-        <option value="$PROJECT_DIR$/small-single/src/main/java/cn/swm/service/impl/ExpressServiceImpl.java" />
-        <option value="$PROJECT_DIR$/small-single/src/main/java/cn/swm/controller/ExpressController.java" />
         <option value="$PROJECT_DIR$/small-single/src/main/java/cn/swm/pojo/dto/OrderDetail.java" />
         <option value="$PROJECT_DIR$/small-single/src/main/java/cn/swm/service/OrderService.java" />
         <option value="$PROJECT_DIR$/small-single/src/main/java/cn/swm/service/impl/OrderServiceImpl.java" />
@@ -188,7 +273,6 @@
         <option value="$PROJECT_DIR$/small-single/src/main/java/cn/swm/service/impl/DictServiceImpl.java" />
         <option value="$PROJECT_DIR$/small-single/src/main/java/cn/swm/controller/DictController.java" />
         <option value="$PROJECT_DIR$/small-single/src/main/java/cn/swm/mapper/TbMemberMapper.java" />
-        <option value="$PROJECT_DIR$/small-single/src/main/java/cn/swm/common/test/Test.java" />
         <option value="$PROJECT_DIR$/MybatisGeneratoer/src/main/java/test/Test.java" />
         <option value="$PROJECT_DIR$/small-single/src/main/java/cn/swm/pojo/dto/MemberDto.java" />
         <option value="$PROJECT_DIR$/small-single/src/main/java/cn/swm/utils/DtoUtil.java" />
@@ -198,16 +282,28 @@
         <option value="$PROJECT_DIR$/small-single/src/main/java/cn/swm/service/impl/MemberServiceImpl.java" />
         <option value="$PROJECT_DIR$/small-single/src/main/java/cn/swm/controller/MemberController.java" />
         <option value="$PROJECT_DIR$/small-single/src/main/java/cn/swm/pojo/dto/RoleDto.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/4a7b4020-2379-4bec-9cd9-7dddcd0a6567/console.sql" />
         <option value="$PROJECT_DIR$/small-single/src/main/java/cn/swm/mapper/TbOrderMapper.java" />
         <option value="$PROJECT_DIR$/small-single/src/main/java/cn/swm/mapper/TbOrderMapper.xml" />
         <option value="$PROJECT_DIR$/small-single/src/main/java/cn/swm/mapper/TbRoleMapper.java" />
         <option value="$PROJECT_DIR$/small-single/src/main/java/cn/swm/mapper/TbRoleMapper.xml" />
-        <option value="$PROJECT_DIR$/small-single/src/main/webapp/WEB-INF/jsp/admin-role-edit.jsp" />
         <option value="$PROJECT_DIR$/small-single/src/main/java/cn/swm/pojo/TbRole.java" />
+        <option value="$PROJECT_DIR$/small-single/src/main/webapp/WEB-INF/jsp/admin-edit.jsp" />
+        <option value="$PROJECT_DIR$/small-single/src/main/webapp/WEB-INF/jsp/admin-add.jsp" />
         <option value="$PROJECT_DIR$/small-single/src/main/java/cn/swm/service/UserService.java" />
-        <option value="$PROJECT_DIR$/small-single/src/main/java/cn/swm/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/small-single/src/main/java/cn/swm/service/ExpressService.java" />
+        <option value="$PROJECT_DIR$/small-single/src/main/java/cn/swm/service/impl/ExpressServiceImpl.java" />
+        <option value="$PROJECT_DIR$/small-single/src/main/java/cn/swm/controller/ExpressController.java" />
+        <option value="$PROJECT_DIR$/small-single/src/main/java/cn/swm/service/SystemService.java" />
+        <option value="$PROJECT_DIR$/small-single/src/main/java/cn/swm/service/impl/SystemServiceImpl.java" />
+        <option value="$PROJECT_DIR$/small-single/src/main/webapp/WEB-INF/jsp/admin-role-edit.jsp" />
+        <option value="$PROJECT_DIR$/small-single/src/main/java/cn/swm/common/test/Test.java" />
+        <option value="$PROJECT_DIR$/small-single/src/main/webapp/WEB-INF/jsp/admin-list.jsp" />
+        <option value="$PROJECT_DIR$/small-single/src/main/java/cn/swm/pojo/TbUser.java" />
         <option value="$PROJECT_DIR$/small-single/src/main/java/cn/swm/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/small-single/src/main/java/cn/swm/mapper/TbUserMapper.java" />
+        <option value="$PROJECT_DIR$/small-single/src/main/java/cn/swm/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/small-single/src/main/java/cn/swm/controller/SystemController.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/4a7b4020-2379-4bec-9cd9-7dddcd0a6567/console.sql" />
       </list>
     </option>
   </component>
@@ -246,10 +342,9 @@
   <component name="MavenRunner">
     <option name="jreName" value="1.8" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="4">
-    <option name="x" value="960" />
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="28" />
-    <option name="width" value="960" />
+    <option name="width" value="887" />
     <option name="height" value="1018" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -299,6 +394,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="swm" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="small-single" type="b2602c69:ProjectViewProjectNode" />
+              <item name="small-single" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="swm" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="small-single" type="b2602c69:ProjectViewProjectNode" />
@@ -365,7 +470,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554003962143" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554022948065" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../small-single" />
@@ -496,16 +601,15 @@
       <workItem from="1553767957077" duration="14179000" />
       <workItem from="1553827134141" duration="2942000" />
       <workItem from="1553830497064" duration="34235000" />
-      <workItem from="1553905297897" duration="43465000" />
+      <workItem from="1553905297897" duration="58044000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="157969000" />
+    <option name="totallyTimeSpent" value="172548000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="960" y="28" width="960" height="1018" extended-state="4" />
-    <editor active="true" />
+    <frame x="0" y="28" width="1920" height="1018" extended-state="6" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Capture Tool" order="1" />
@@ -514,7 +618,7 @@
       <window_info id="Web" order="4" side_tool="true" />
       <window_info id="Designer" order="5" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="7" weight="0.31387666" />
+      <window_info content_ui="combo" id="Project" order="7" visible="true" weight="0.16434689" />
       <window_info anchor="bottom" id="Spring" order="0" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
@@ -525,18 +629,18 @@
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Find" order="9" weight="0.15074798" />
-      <window_info anchor="bottom" id="Run" order="10" weight="0.19332567" />
+      <window_info anchor="bottom" id="Run" order="10" weight="0.18411967" />
       <window_info anchor="bottom" id="Debug" order="11" weight="0.33716917" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="14" />
-      <window_info anchor="bottom" id="Database Console" order="15" weight="0.38319907" />
+      <window_info active="true" anchor="bottom" id="Database Console" order="15" visible="true" weight="0.38319907" />
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="right" id="Database" order="2" weight="0.23678415" />
+      <window_info anchor="right" id="Database" order="2" visible="true" weight="0.21092077" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" weight="0.2715105" />
+      <window_info anchor="right" id="Maven" order="5" weight="0.2711519" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
@@ -549,7 +653,7 @@
       <window_info id="Web" order="4" side_tool="true" />
       <window_info id="Designer" order="5" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="7" visible="true" weight="0.31387666" />
+      <window_info active="true" content_ui="combo" id="Project" order="7" visible="true" weight="0.31294596" />
       <window_info anchor="bottom" id="Spring" order="0" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
@@ -568,7 +672,7 @@
       <window_info anchor="bottom" id="Database Console" order="15" weight="0.38319907" />
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="right" id="Database" order="2" weight="0.23678415" />
+      <window_info anchor="right" id="Database" order="2" weight="0.21100917" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
       <window_info anchor="right" id="Maven" order="5" weight="0.2715105" />
@@ -581,218 +685,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/small-single/src/main/java/cn/swm/common/constant/CommonConstant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/small-single/src/main/java/cn/swm/common/constant/CountConstant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/small-single/src/main/java/cn/swm/common/constant/DictConstant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://4a7b4020-2379-4bec-9cd9-7dddcd0a6567/schema/small/table/tb_dict">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/small-single/src/main/webapp/WEB-INF/jsp/dict-edit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="38" column="14" lean-forward="true" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/small-single/src/main/webapp/WEB-INF/jsp/dict-list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1575">
-          <caret line="129" column="44" selection-start-line="129" selection-start-column="29" selection-end-line="129" selection-end-column="44" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/small-single/src/main/webapp/WEB-INF/jsp/dict-add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="80" column="29" lean-forward="true" selection-start-line="80" selection-start-column="29" selection-end-line="80" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/small-single/src/main/java/cn/swm/service/impl/DictServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="689">
-          <caret line="77" column="16" selection-start-line="77" selection-start-column="16" selection-end-line="77" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/small-single/src/main/java/cn/swm/controller/DictController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="62" column="54" selection-start-line="62" selection-start-column="54" selection-end-line="62" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/small-single/src/main/java/cn/swm/controller/ItemController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="201" column="91" selection-start-line="199" selection-start-column="45" selection-end-line="201" selection-end-column="91" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/small-single/src/main/java/cn/swm/mapper/TbMemberMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="35" column="2" lean-forward="true" selection-start-line="35" selection-start-column="2" selection-end-line="37" selection-end-column="116" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/small-single/src/main/java/cn/swm/service/DictService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/small-single/src/main/java/cn/swm/service/ItemService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="86" lean-forward="true" selection-start-line="32" selection-start-column="86" selection-end-line="32" selection-end-column="86" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MybatisGeneratoer/src/main/java/test/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/small-single/src/main/test/test/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/small-single/src/main/java/cn/swm/common/test/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="29" lean-forward="true" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/small-single/src/main/java/cn/swm/utils/DtoUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="20" column="42" lean-forward="true" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/small-single/src/main/webapp/WEB-INF/jsp/member-edit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="229" column="30" lean-forward="true" selection-start-line="229" selection-start-column="30" selection-end-line="229" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/small-single/src/main/webapp/WEB-INF/jsp/change-password.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-241">
-          <caret line="42" column="18" lean-forward="true" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/small-single/src/main/webapp/WEB-INF/jsp/content-product-add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="200" column="29" lean-forward="true" selection-start-line="200" selection-start-column="29" selection-end-line="200" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://4a7b4020-2379-4bec-9cd9-7dddcd0a6567/schema/small/table/tb_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/small-single/src/main/webapp/WEB-INF/jsp/member-list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="276" column="42" selection-start-line="276" selection-start-column="22" selection-end-line="276" selection-end-column="42" />
-          <folding>
-            <element signature="n#style#0;n#u#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#3;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#3;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/small-single/src/main/java/cn/swm/service/MemberService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="719">
-          <caret line="50" column="37" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/small-single/src/main/webapp/WEB-INF/jsp/member-del.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="296" column="31" lean-forward="true" selection-start-line="296" selection-start-column="31" selection-end-line="296" selection-end-column="31" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://4a7b4020-2379-4bec-9cd9-7dddcd0a6567/schema/small/table/tb_member">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/small-single/src/main/java/cn/swm/mapper/TbMemberMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -843,13 +735,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4a7b4020-2379-4bec-9cd9-7dddcd0a6567/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" selection-start-line="25" selection-end-line="28" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/small-single/src/main/java/cn/swm/mapper/TbOrderMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="689">
@@ -885,25 +770,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/small-single/src/main/java/cn/swm/pojo/TbRole.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-          <folding>
-            <element signature="e#222#223#0" expanded="true" />
-            <element signature="e#267#268#0" expanded="true" />
-            <element signature="e#301#302#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://4a7b4020-2379-4bec-9cd9-7dddcd0a6567/schema/small/table/tb_role">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/small-single/src/main/webapp/WEB-INF/jsp/admin-role.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="645">
@@ -915,20 +781,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/small-single/src/main/webapp/WEB-INF/jsp/admin-role-add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="148" column="29" lean-forward="true" selection-start-line="148" selection-start-column="29" selection-end-line="148" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/small-single/src/main/webapp/WEB-INF/jsp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="146" column="20" lean-forward="true" selection-start-line="146" selection-start-column="20" selection-end-line="146" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/small-single/src/main/webapp/WEB-INF/jsp/admin-permission-add.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -936,17 +788,197 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/small-single/src/main/webapp/WEB-INF/jsp/admin-role-edit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="153" column="40" selection-start-line="153" selection-start-column="40" selection-end-line="153" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/small-single/src/main/webapp/WEB-INF/jsp/admin-permission-edit.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="359">
           <caret line="85" column="45" selection-start-line="85" selection-start-column="22" selection-end-line="85" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/small-single/src/main/webapp/WEB-INF/jsp/admin-permission.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-285">
+          <caret line="140" column="47" lean-forward="true" selection-start-line="140" selection-start-column="22" selection-end-line="140" selection-end-column="47" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/small-single/src/main/webapp/WEB-INF/jsp/admin-add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="171" column="22" selection-start-line="171" selection-start-column="22" selection-end-line="171" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4a7b4020-2379-4bec-9cd9-7dddcd0a6567/schema/small/table/tb_thanks">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4a7b4020-2379-4bec-9cd9-7dddcd0a6567/schema/small/table/tb_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/small-single/src/main/webapp/WEB-INF/jsp/change-admin-password.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-405">
+          <caret line="43" column="18" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4a7b4020-2379-4bec-9cd9-7dddcd0a6567/schema/small/table/tb_base">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/small-single/src/main/java/cn/swm/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="718">
+          <caret line="59" column="41" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/small-single/src/main/webapp/WEB-INF/jsp/system-base.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="320" column="36" lean-forward="true" selection-start-line="320" selection-start-column="36" selection-end-line="320" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4a7b4020-2379-4bec-9cd9-7dddcd0a6567/schema/small/table/tb_log">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/small-single/src/main/webapp/WEB-INF/jsp/system-express-add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="81" column="29" lean-forward="true" selection-start-line="81" selection-start-column="29" selection-end-line="81" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/small-single/src/main/java/cn/swm/service/ExpressService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/small-single/src/main/java/cn/swm/service/impl/ExpressServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="719">
+          <caret line="66" column="16" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/small-single/src/main/java/cn/swm/controller/ExpressController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="47" column="1" lean-forward="true" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/small-single/src/main/webapp/WEB-INF/jsp/system-express-edit.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="85" column="29" lean-forward="true" selection-start-line="85" selection-start-column="29" selection-end-line="85" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/small-single/src/main/webapp/WEB-INF/jsp/system-express.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="885">
+          <caret line="128" column="33" lean-forward="true" selection-start-line="128" selection-start-column="33" selection-end-line="128" selection-end-column="33" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/small-single/src/main/webapp/WEB-INF/jsp/shiro-add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="101" column="39" selection-start-line="101" selection-start-column="39" selection-end-line="101" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/small-single/src/main/webapp/WEB-INF/jsp/shiro-edit.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="78" column="42" lean-forward="true" selection-start-line="78" selection-start-column="42" selection-end-line="78" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/small-single/src/main/webapp/WEB-INF/jsp/system-shiro.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="203" column="19" lean-forward="true" selection-start-line="203" selection-start-column="19" selection-end-line="203" selection-end-column="19" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/small-single/src/main/webapp/WEB-INF/jsp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="569">
+          <caret line="167" column="46" lean-forward="true" selection-start-line="167" selection-start-column="46" selection-end-line="167" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/small-single/src/main/java/cn/swm/service/SystemService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/small-single/src/main/webapp/WEB-INF/jsp/admin-role-add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="99" column="18" lean-forward="true" selection-start-line="99" selection-start-column="18" selection-end-line="99" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/small-single/src/main/webapp/WEB-INF/jsp/admin-role-edit.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="159" column="15" lean-forward="true" selection-start-line="159" selection-start-column="15" selection-end-line="159" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/small-single/src/main/java/cn/swm/pojo/TbRole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="e#190#191#0" expanded="true" />
+            <element signature="e#218#219#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4a7b4020-2379-4bec-9cd9-7dddcd0a6567/schema/small/table/tb_role">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -964,39 +996,113 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/small-single/src/main/java/cn/swm/service/UserService.java">
+    <entry file="file://$PROJECT_DIR$/small-single/src/main/java/cn/swm/common/test/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+        <state relative-caret-position="210">
+          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/small-single/src/main/java/cn/swm/pojo/TbUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+          <folding>
+            <element signature="e#536#537#0" expanded="true" />
+            <element signature="e#586#587#0" expanded="true" />
+            <element signature="e#628#629#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/small-single/src/main/java/cn/swm/mapper/TbUserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/small-single/src/main/webapp/WEB-INF/jsp/admin-edit.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="121" column="21" lean-forward="true" selection-start-line="121" selection-start-column="21" selection-end-line="121" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/small-single/src/main/java/cn/swm/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="779">
-          <caret line="272" column="17" selection-start-line="272" selection-start-column="17" selection-end-line="272" selection-end-column="17" />
+        <state relative-caret-position="233">
+          <caret line="323" column="50" selection-start-line="323" selection-start-column="50" selection-end-line="323" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#903#904#0" expanded="true" />
+            <element signature="e#957#958#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/small-single/src/main/java/cn/swm/service/impl/SystemServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="100" column="9" lean-forward="true" selection-start-line="100" selection-start-column="9" selection-end-line="100" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/small-single/src/main/webapp/WEB-INF/jsp/admin-list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="246" column="45" lean-forward="true" selection-start-line="246" selection-start-column="45" selection-end-line="246" selection-end-column="45" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#3;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#3;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/small-single/src/main/webapp/WEB-INF/jsp/system-log.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="204" column="35" selection-start-line="204" selection-start-column="22" selection-end-line="204" selection-end-column="35" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/small-single/src/main/java/cn/swm/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="749">
-          <caret line="195" column="7" selection-start-line="195" selection-start-column="7" selection-end-line="195" selection-end-column="7" />
+        <state relative-caret-position="218">
+          <caret line="214" column="5" lean-forward="true" selection-start-line="214" selection-start-column="5" selection-end-line="214" selection-end-column="5" />
           <folding>
-            <element signature="e#4879#4880#0" expanded="true" />
-            <element signature="e#4928#4929#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#4940#4941#0" expanded="true" />
+            <element signature="e#4989#4990#0" expanded="true" />
+            <element signature="e#7500#7501#0" expanded="true" />
+            <element signature="e#7548#7549#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/small-single/src/main/webapp/WEB-INF/jsp/admin-permission.jsp">
+    <entry file="file://$PROJECT_DIR$/small-single/src/main/java/cn/swm/controller/SystemController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-285">
-          <caret line="140" column="47" lean-forward="true" selection-start-line="140" selection-start-column="22" selection-end-line="140" selection-end-column="47" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="499">
+          <caret line="88" column="9" lean-forward="true" selection-start-line="88" selection-start-column="9" selection-end-line="88" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4a7b4020-2379-4bec-9cd9-7dddcd0a6567/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="32" selection-start-line="32" selection-end-line="32" selection-end-column="30" />
         </state>
       </provider>
     </entry>

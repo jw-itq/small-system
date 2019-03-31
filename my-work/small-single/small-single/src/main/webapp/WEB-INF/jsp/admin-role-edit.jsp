@@ -151,13 +151,13 @@
                 minlength:1,
                 maxlength:20,
                 //remote: "/user/edit/roleName/"+parent.roleId
-                remote: "/user/roleName"
+                //remote: "/user/roleName"
             },
         },
         messages: {
-            name: {
+            /*name: {
                 remote: "该角色名已被使用"
-            }
+            }*/
         },
         onkeyup:false,
         focusCleanup:false,

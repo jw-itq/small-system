@@ -1,6 +1,7 @@
 package cn.swm.service;
 
 import cn.swm.pojo.TbBase;
+import cn.swm.pojo.TbLog;
 import cn.swm.pojo.TbShiroFilter;
 import cn.swm.pojo.common.Result;
 
@@ -15,4 +16,20 @@ public interface SystemService {
     List<TbShiroFilter> getShiroFilter();
 
     TbBase getBase();
+
+    int updateBase(TbBase tbBase);
+
+    int getShiroCount();
+
+    int addShiro(TbShiroFilter tbShiroFilter);
+
+    int deleteshiroById(int id);
+
+    int updateShiro(TbShiroFilter tbShiroFilter);
+
+    List<TbLog> getLogList();
+
+    int getLogCount();
+
+    int deleteLogById(int id);
 }

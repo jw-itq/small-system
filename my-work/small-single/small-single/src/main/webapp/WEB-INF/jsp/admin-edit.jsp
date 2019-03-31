@@ -154,7 +154,8 @@
                     required:true,
                     minlength:1,
                     maxlength:16,
-                    remote: "/user/edit/username/"+parent.userId
+                    //remote: "/user/edit/username/"+parent.userId
+                    remote: "/user/username/"
                 },
                 sex:{
                     required:true,
@@ -162,12 +163,12 @@
                 phone:{
                     required:true,
                     isPhone:true,
-                    remote: "/user/edit/phone/"+parent.userId
+                    //remote: "/user/edit/phone/"+parent.userId
                 },
                 email:{
                     required:true,
                     email:true,
-                    remote: "/user/edit/email/"+parent.userId
+                    //remote: "/user/edit/email/"+parent.userId
                 },
                 roleId:{
                     required:true,
@@ -177,12 +178,12 @@
                 username: {
                     remote: "该用户名已被注册"
                 },
-                phone: {
+                /*phone: {
                     remote: "该手机号已被注册"
                 },
                 email: {
                     remote: "该邮箱已被注册"
-                }
+                }*/
             },
             onkeyup:false,
             focusCleanup:false,

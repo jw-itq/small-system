@@ -17,8 +17,8 @@ cn/swm/pojo/TbUserExample$GeneratedCriteria.class
 cn/swm/pojo/TbBaseExample$Criteria.class
 cn/swm/pojo/TbOrderShippingExample.class
 cn/swm/pojo/TbExpress.class
-cn/swm/pojo/TbDict.class
 cn/swm/pojo/TbLog.class
+cn/swm/pojo/TbDict.class
 cn/swm/common/shiro/MyShiroFilterFactoryBean.class
 cn/swm/common/shiro/MyRealm.class
 cn/swm/mapper/TbPanelMapper.class
@@ -71,6 +71,7 @@ cn/swm/pojo/TbOrderItemExample$Criteria.class
 cn/swm/pojo/TbRolePerm.class
 cn/swm/controller/ItemController.class
 cn/swm/pojo/front/SearchItem.class
+cn/swm/pojo/dto/RoleDto.class
 cn/swm/pojo/TbDictExample$GeneratedCriteria.class
 cn/swm/pojo/TbLogExample$Criteria.class
 cn/swm/controller/ContentController.class

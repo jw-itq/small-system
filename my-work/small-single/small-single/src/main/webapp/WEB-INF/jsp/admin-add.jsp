@@ -164,12 +164,12 @@
                 phone:{
                     required:true,
                     isPhone:true,
-                    remote:"/user/phone"
+                    //remote:"/user/phone"
                 },
                 email:{
                     required:true,
                     email:true,
-                    remote:"/user/email"
+                    //remote:"/user/email"
                 },
                 roleId:{
                     required:true,
@@ -179,12 +179,12 @@
                 username: {
                     remote: "该用户名已被注册"
                 },
-                phone: {
+                /*phone: {
                     remote: "该手机号已被注册"
                 },
                 email: {
                     remote: "该邮箱已被注册"
-                },
+                },*/
             },
             onkeyup:false,
             focusCleanup:false,

@@ -8,6 +8,7 @@ import cn.swm.pojo.common.DataTableResult;
 import cn.swm.pojo.common.Result;
 import cn.swm.pojo.dto.RoleDto;
 
+import java.util.List;
 import java.util.Set;
 
 public interface UserService {
@@ -39,4 +40,22 @@ public interface UserService {
     int updatePermission(TbPermission tbPermission);
 
     int deletepermission(Integer id);
+
+    DataTableResult getUserList();
+
+    Long getUserCount();
+
+    List<TbRole> getAllRoles();
+
+    boolean isUserName(String name);
+
+    int addUser(TbUser tbUser);
+
+    int deleteUser(long id);
+
+    int updateUser(TbUser tbUser);
+
+    int updateAdminPassword(TbUser tbUser);
+
+    int updateStateUser(long id,int state);
 }

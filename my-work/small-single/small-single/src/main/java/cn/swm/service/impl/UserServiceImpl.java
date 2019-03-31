@@ -11,11 +11,9 @@ import cn.swm.pojo.dto.RoleDto;
 import cn.swm.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.DigestUtils;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -94,6 +92,7 @@ public class UserServiceImpl implements UserService {
             list.add(roleDto);
         }
         result.setData(list);
+        result.setSuccess(true);
         return result;
     }
 
@@ -117,6 +116,7 @@ public class UserServiceImpl implements UserService {
         TbPermissionExample tbPermissionExample = new TbPermissionExample();
         List<TbPermission> list = tbPermissionMapper.selectByExample(tbPermissionExample);
 
+        result.setSuccess(true);
         result.setData(list);
         return result;
     }
@@ -147,6 +147,40 @@ public class UserServiceImpl implements UserService {
         if(tbRoleMapper.updateByPrimaryKey(tbRole)!=1){
             throw new SmallException("更新角色权限信息失败");
         }
+
+        TbRolePermExample tbRolePermExample = new TbRolePermExample();
+        TbRolePermExample.Criteria criteria = tbRolePermExample.createCriteria();
+        criteria.andRoleIdEqualTo(tbRole.getId());
+        List<TbRolePerm> list = tbRolePermMapper.selectByExample(tbRolePermExample);
+
+        List<Integer> newPermList = new ArrayList<>();
+        if(tbRole.getRoles()!=null){
+            newPermList = Arrays.asList(tbRole.getRoles());
+        }
+        //将list转换成编号集合,把编号提出来
+        List<Integer> oldPermList = new ArrayList<>();
+
+        for(TbRolePerm tbRolePerm : list){
+            if(!newPermList.contains(tbRolePerm.getPermissionId())){
+                if(tbRolePermMapper.deleteByPrimaryKey(tbRolePerm.getId())!=1){
+                    throw new SmallException("在更新用户权限的时候，删除多于的权限的时候出错");
+                }
+            }
+            oldPermList.add(tbRolePerm.getPermissionId());
+        }
+
+        for(Integer perm : newPermList){
+            if(!oldPermList.contains(perm)){
+                //需要添加
+                TbRolePerm tbRolePerm = new TbRolePerm();
+                tbRolePerm.setRoleId(tbRole.getId());
+                tbRolePerm.setPermissionId(perm);
+                if(tbRolePermMapper.insert(tbRolePerm)!=1){
+                    throw new SmallException("在更新用户权限信息的时候，添加权限的时候出错");
+                }
+            }
+        }
+
         return 1;
     }
 
@@ -269,6 +303,148 @@ public class UserServiceImpl implements UserService {
             if(tbRolePermMapper.deleteByPrimaryKey(tbRolePerm.getId())!=1){
                 throw new SmallException("删除权限跟角色对应的表的时候出错");
             }
+        }
+        return 1;
+    }
+
+    /**
+     * 查询所有的管理员
+     * @return
+     */
+    @Override
+    public DataTableResult getUserList() {
+        DataTableResult result = new DataTableResult();
+        TbUserExample tbUserExample = new TbUserExample();
+        List<TbUser> list = tbUserMapper.selectByExample(tbUserExample);
+
+        for(TbUser tbUser : list){
+            String roles = "";
+            Iterator<TbRole> iterator = getAllRoles().iterator();
+            while (iterator.hasNext()){
+                roles += iterator.next().getName()+" ";
+            }
+            tbUser.setRoleNames(roles);
+        }
+        result.setData(list);
+        result.setSuccess(true);
+        return result;
+    }
+
+    /**
+     * 查询管理员的列表数量
+     * @return
+     */
+    @Override
+    public Long getUserCount() {
+        TbUserExample tbUserExample = new TbUserExample();
+        return tbUserMapper.countByExample(tbUserExample);
+    }
+
+    /**
+     * 得到所有的角色信息
+     * @return
+     */
+    @Override
+    public List<TbRole> getAllRoles() {
+        TbRoleExample tbRoleExample = new TbRoleExample();
+        return tbRoleMapper.selectByExample(tbRoleExample);
+    }
+
+    /**
+     * 判断管理员的名字是否跟数据库里面的重复了
+     * @param name
+     * @return
+     */
+    @Override
+    public boolean isUserName(String name) {
+        TbUserExample tbUserExample = new TbUserExample();
+        List<TbUser> list = tbUserMapper.selectByExample(tbUserExample);
+        for(TbUser tbUser : list){
+            if(tbUser.getUsername().equals(name)){
+                return false;
+            }
+        }
+        return true;
+    }
+
+    /**
+     * 添加管理员
+     * @param tbUser
+     * @return
+     */
+    @Override
+    public int addUser(TbUser tbUser) {
+        tbUser.setCreated(new Date());
+        tbUser.setUpdated(new Date());
+        tbUser.setState(1);
+        if(tbUserMapper.insert(tbUser)!=1){
+            throw new SmallException("添加管理员失败");
+        }
+        return 1;
+    }
+
+    /**
+     * 删除管理员，根据id
+     * @param id
+     * @return
+     */
+    @Override
+    public int deleteUser(long id) {
+        if(tbUserMapper.deleteByPrimaryKey(id)!=1){
+            throw new SmallException("删除管理员失败");
+        }
+        return 1;
+    }
+
+    /**
+     * 更新用户的信息
+     * @param tbUser
+     * @return
+     */
+    @Override
+    public int updateUser(TbUser tbUser) {
+        TbUser oldTbUser = tbUserMapper.selectByPrimaryKey(tbUser.getId());
+        tbUser.setState(1);
+        tbUser.setUpdated(new Date());
+        tbUser.setCreated(oldTbUser.getCreated());
+        if(tbUserMapper.updateByPrimaryKey(tbUser)!=1){
+            throw new SmallException("更新用户的时候出错");
+        }
+
+        return 1;
+    }
+
+    /**
+     * 更改密码
+     * @param tbUser
+     * @return
+     */
+    @Override
+    public int updateAdminPassword(TbUser tbUser) {
+        TbUser oldTbUser = tbUserMapper.selectByPrimaryKey(tbUser.getId());
+        String md5Pass = DigestUtils.md5DigestAsHex(tbUser.getPassword().getBytes());
+        oldTbUser.setPassword(md5Pass);
+        oldTbUser.setUpdated(new Date());
+
+        if(tbUserMapper.updateByPrimaryKey(oldTbUser)!=1){
+            throw new SmallException("修改密码失败");
+        }
+        return 1;
+    }
+
+    /**
+     * 根据用户的状态选择是否要停用或者启用用户
+     * @param id
+     * @param state
+     * @return
+     */
+    @Override
+    public int updateStateUser(long id, int state) {
+        TbUser tbUser = tbUserMapper.selectByPrimaryKey(id);
+        tbUser.setState(state);
+        tbUser.setUpdated(new Date());
+        if(tbUserMapper.updateByPrimaryKey(tbUser)!=1){
+            throw new SmallException("用户状态更新失败");
         }
         return 1;
     }

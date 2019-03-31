@@ -2,19 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a381b77-a23d-43a2-8ee3-a64e08de9b36" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/pojo/dto/RoleDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../data/xmall" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/xmall" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../data/xmall-front" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/xmall-front" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../my-work/small-single/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/common/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/common/test/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/controller/ExpressController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/controller/ExpressController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/controller/SystemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/controller/SystemController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/mapper/TbOrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/mapper/TbOrderMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/mapper/TbOrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/mapper/TbOrderMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/mapper/TbRoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/mapper/TbRoleMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/mapper/TbRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/mapper/TbRoleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/pojo/TbRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/pojo/TbRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/mapper/TbUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/mapper/TbUserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/pojo/TbUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/pojo/TbUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/service/ExpressService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/service/ExpressService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/service/SystemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/service/SystemService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/service/impl/ExpressServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/service/impl/ExpressServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/service/impl/SystemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/service/impl/SystemServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/java/cn/swm/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/webapp/WEB-INF/jsp/admin-add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/webapp/WEB-INF/jsp/admin-add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/webapp/WEB-INF/jsp/admin-edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/webapp/WEB-INF/jsp/admin-edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/webapp/WEB-INF/jsp/admin-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/webapp/WEB-INF/jsp/admin-list.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/webapp/WEB-INF/jsp/admin-role-edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/src/main/webapp/WEB-INF/jsp/admin-role-edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/common/test/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/common/test/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/controller/ExpressController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/controller/ExpressController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/controller/SystemController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/controller/SystemController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/mapper/TbOrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/mapper/TbOrderMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/mapper/TbRoleMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/mapper/TbRoleMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/mapper/TbRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/mapper/TbRoleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/pojo/TbRole.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/pojo/TbRole.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/pojo/TbUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/pojo/TbUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/service/ExpressService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/service/ExpressService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/service/SystemService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/service/SystemService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/service/impl/ExpressServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/service/impl/ExpressServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/service/impl/SystemServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/service/impl/SystemServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/classes/cn/swm/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-work/small-single/small-single/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -59,8 +81,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/exrick/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="166" column="36" lean-forward="true" selection-start-line="166" selection-start-column="36" selection-end-line="166" selection-end-column="36" />
+            <state relative-caret-position="419">
+              <caret line="245" column="38" selection-start-line="245" selection-start-column="38" selection-end-line="245" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/exrick/pojo/TbUser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -68,8 +99,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/exrick/service/impl/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="110" column="25" lean-forward="true" selection-start-line="110" selection-start-column="25" selection-end-line="110" selection-end-column="25" />
+            <state relative-caret-position="442">
+              <caret line="316" column="33" lean-forward="true" selection-start-line="316" selection-start-column="33" selection-end-line="316" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -90,6 +121,7 @@
       <find>product_add</find>
       <find>product-list</find>
       <find>deleteHomeRedis</find>
+      <find>getPermissionList</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -125,9 +157,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="4">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="28" />
-    <option name="width" value="960" />
+    <option name="width" value="887" />
     <option name="height" value="1018" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -292,7 +324,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554003962321" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554022948181" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -357,18 +389,17 @@
       <workItem from="1553732537650" duration="12212000" />
       <workItem from="1553767906213" duration="11270000" />
       <workItem from="1553828314999" duration="24439000" />
-      <workItem from="1553907430824" duration="32477000" />
+      <workItem from="1553907430824" duration="36747000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133114000" />
+    <option name="totallyTimeSpent" value="137384000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="28" width="960" height="1018" extended-state="4" />
-    <editor active="true" />
+    <frame x="0" y="28" width="1920" height="1018" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.4537445" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.251606" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -528,20 +559,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/exrick/controller/CountController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="41" column="41" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/exrick/controller/PanelController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/exrick/service/impl/ContentServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="552">
@@ -873,13 +890,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/exrick/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="166" column="36" lean-forward="true" selection-start-line="166" selection-start-column="36" selection-end-line="166" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/exrick/pojo/TbRole.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -887,10 +897,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/exrick/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="245" column="38" selection-start-line="245" selection-start-column="38" selection-end-line="245" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/exrick/mapper/TbUserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="37" column="1" lean-forward="true" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/exrick/pojo/TbUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/exrick/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="110" column="25" lean-forward="true" selection-start-line="110" selection-start-column="25" selection-end-line="110" selection-end-column="25" />
+        <state relative-caret-position="442">
+          <caret line="316" column="33" lean-forward="true" selection-start-line="316" selection-start-column="33" selection-end-line="316" selection-end-column="33" />
         </state>
       </provider>
     </entry>

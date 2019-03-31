@@ -16,6 +16,7 @@ import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.DigestUtils;
 import org.springframework.web.bind.annotation.*;
+import sun.rmi.runtime.Log;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
@@ -194,5 +195,65 @@ public class UserController {
            userService.deletepermission(id);
        }
        return new ResultUtil<Object>().setData(null);
+    }
+
+    @RequestMapping(value = "/user/userList",method = RequestMethod.GET)
+    public DataTableResult getUserList(){
+        return userService.getUserList();
+    }
+
+    @RequestMapping(value = "/user/userCount",method = RequestMethod.GET)
+    public Result<Object> getUserCount(){
+        Long count = userService.getUserCount();
+        return new ResultUtil<Object>().setData(count);
+    }
+
+    @RequestMapping(value = "/user/getAllRoles",method = RequestMethod.GET)
+    public Result<List<TbRole>> getAllRoles(){
+        List<TbRole> list = userService.getAllRoles();
+        return new ResultUtil<List<TbRole>>().setData(list);
+    }
+
+    @RequestMapping(value = "/user/username",method = RequestMethod.GET)
+    public boolean isUserName(String name){
+        return userService.isUserName(name);
+    }
+
+    @RequestMapping(value = "/user/addUser",method = RequestMethod.POST)
+    public Result<Object> addUser(@ModelAttribute TbUser tbUser){
+        userService.addUser(tbUser);
+        return new ResultUtil<Object>().setData(null);
+    }
+
+    @RequestMapping(value = "/user/delUser/{ids}",method = RequestMethod.DELETE)
+    public Result<Object> deleteUser(@PathVariable("ids")long[] ids){
+        for(long id : ids){
+            userService.deleteUser(id);
+        }
+        return new ResultUtil<Object>().setData(null);
+    }
+
+    @RequestMapping(value = "/user/updateUser",method = RequestMethod.POST)
+    public Result<Object> updateUser(@ModelAttribute TbUser tbUser){
+        userService.updateUser(tbUser);
+        return new ResultUtil<Object>().setData(null);
+    }
+
+    @RequestMapping(value = "/user/changePass",method = RequestMethod.POST)
+    public Result<Object> updateAdminPassword(@ModelAttribute TbUser tbUser){
+        userService.updateAdminPassword(tbUser);
+        return new ResultUtil<Object>().setData(null);
+    }
+
+    @RequestMapping(value = "/user/stop/{id}",method = RequestMethod.PUT)
+    public Result<Object> stopUser(@PathVariable("id")long id){
+        userService.updateStateUser(id,0);
+        return new ResultUtil<Object>().setData(null);
+    }
+
+    @RequestMapping(value = "/user/start/{id}",method = RequestMethod.PUT)
+    public Result<Object> startUser(@PathVariable("id")long id){
+        userService.updateStateUser(id,1);
+        return new ResultUtil<Object>().setData(null);
     }
 }
