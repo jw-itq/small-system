@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/MybatisGeneratoer/MybatisGeneratoer.iml" filepath="$PROJECT_DIR$/MybatisGeneratoer/MybatisGeneratoer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/small-single/small-single.iml" filepath="$PROJECT_DIR$/small-single/small-single.iml" />
-    </modules>
-  </component>
-</project>
