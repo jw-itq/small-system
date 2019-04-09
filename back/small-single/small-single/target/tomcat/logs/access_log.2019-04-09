@@ -735,3 +735,15 @@
 127.0.0.1 - - [09/Apr/2019:11:30:42 +0800] "GET /goods/home HTTP/1.1" 200 19511 http-bio-7777-exec-1 61
 127.0.0.1 - - [09/Apr/2019:11:30:42 +0800] "GET /item/catMainList HTTP/1.1" 200 277 http-bio-7777-exec-2 97
 127.0.0.1 - - [09/Apr/2019:11:30:42 +0800] "GET /item/catList HTTP/1.1" 200 9449 http-bio-7777-exec-7 286
+127.0.0.1 - - [09/Apr/2019:16:12:45 +0800] "GET /member/checkLogin?token=6f150dcd-3a4a-448a-ac77-ead39d10f538 HTTP/1.1" 200 294 http-bio-7777-exec-5 2
+127.0.0.1 - - [09/Apr/2019:16:12:45 +0800] "GET /goods/recommend HTTP/1.1" 200 414 http-bio-7777-exec-3 6
+127.0.0.1 - - [09/Apr/2019:16:12:45 +0800] "GET /goods/allGoods?page=1&size=20&sort=&priceGt=&priceLte= HTTP/1.1" 200 5040 http-bio-7777-exec-8 17
+127.0.0.1 - - [09/Apr/2019:16:12:51 +0800] "GET /member/checkLogin?token=6f150dcd-3a4a-448a-ac77-ead39d10f538 HTTP/1.1" 200 294 http-bio-7777-exec-9 3
+127.0.0.1 - - [09/Apr/2019:16:12:51 +0800] "GET /member/checkLogin?token=6f150dcd-3a4a-448a-ac77-ead39d10f538 HTTP/1.1" 200 294 http-bio-7777-exec-10 2
+127.0.0.1 - - [09/Apr/2019:16:12:52 +0800] "GET /member/geetestInit?t=1554797571645 HTTP/1.1" 200 151 http-bio-7777-exec-4 377
+127.0.0.1 - - [09/Apr/2019:16:12:54 +0800] "GET /member/checkLogin?token=6f150dcd-3a4a-448a-ac77-ead39d10f538 HTTP/1.1" 200 294 http-bio-7777-exec-6 2
+127.0.0.1 - - [09/Apr/2019:16:12:54 +0800] "POST /member/cartList HTTP/1.1" 200 96 http-bio-7777-exec-7 3
+127.0.0.1 - - [09/Apr/2019:16:12:54 +0800] "GET /goods/recommend HTTP/1.1" 200 414 http-bio-7777-exec-3 4
+127.0.0.1 - - [09/Apr/2019:16:12:54 +0800] "GET /goods/allGoods?page=1&size=20&sort=&priceGt=&priceLte= HTTP/1.1" 200 5040 http-bio-7777-exec-5 7
+127.0.0.1 - - [09/Apr/2019:16:12:54 +0800] "GET /item/catMainList HTTP/1.1" 200 277 http-bio-7777-exec-2 92
+127.0.0.1 - - [09/Apr/2019:16:12:54 +0800] "GET /item/catList HTTP/1.1" 200 9449 http-bio-7777-exec-1 296
