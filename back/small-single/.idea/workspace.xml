@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33bc3088-6d0c-4cf6-b35b-f4ec7c52f9a7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/small-single/src/main/java/cn/swm/mapper/TbThanksMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/small-single/src/main/java/cn/swm/mapper/TbThanksMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/small-single/src/main/java/cn/swm/pojo/TbThanks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/small-single/src/main/java/cn/swm/pojo/TbThanksExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../backup/small-single/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../data/xpay-v2.0/xpay-code/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../my-work/small-single/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../front/small-front/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../front/small-front/config/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../front/small-front/src/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../front/small-front/src/api/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../front/small-front/src/common/header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../front/small-front/src/common/header.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../front/small-front/src/page/Order/payment.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../front/small-front/src/page/Order/payment.vue" afterDir="false" />
-    </list>
+    <list default="true" id="33bc3088-6d0c-4cf6-b35b-f4ec7c52f9a7" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/small-single/target/" />
     <ignored path="$PROJECT_DIR$/MybatisGeneratoer/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -387,7 +374,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554780616852" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554781075009" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../backup/small-system/small-single/xmall-single" />
@@ -529,12 +516,12 @@
       <workItem from="1554594179879" duration="16783000" />
       <workItem from="1554679988583" duration="21054000" />
       <workItem from="1554722839522" duration="6133000" />
-      <workItem from="1554768631237" duration="10144000" />
+      <workItem from="1554768631237" duration="10503000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="292752000" />
+    <option name="totallyTimeSpent" value="293111000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1920" height="1018" extended-state="7" />
