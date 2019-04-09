@@ -121,7 +121,7 @@
         payNow: '立刻支付',
         submit: false,
         nickName: '',
-        money: '1.00',//默认价格
+        money: '1.00',// 默认价格
         info: '',
         email: '',
         orderId: '',
@@ -145,7 +145,7 @@
     },
     methods: {
       checkValid () {
-       /* if (this.nickName !== '' && this.money !== '' && this.isMoney(this.money) && this.email !== '' && this.isEmail(this.email)) {*/
+       /* if (this.nickName !== '' && this.money !== '' && this.isMoney(this.money) && this.email !== '' && this.isEmail(this.email)) { */
         if (this.email !== '' && this.isEmail(this.email)) {
           this.submit = true
         } else {
@@ -190,32 +190,32 @@
           this.type = 'Alipay'
         } else if (this.payType === 2) {
           this.type = 'Wechat'
-        /*} else if (this.payType === 3) {
-          this.type = 'QQ'*/
+        /* } else if (this.payType === 3) {
+          this.type = 'QQ' */
         } else {
           this.type = '其它'
         }
         payMent({
-          nickName: this.nickName, //昵称
-          money: this.money, //实际金额
-          info: this.info, //备注
-          email: this.email, //邮箱
-          orderId: this.orderId, //订单的id
-          userId: this.userId, //用户的id
-          payType: this.type //支付方式
+          nickName: this.nickName, // 昵称
+          money: this.money, // 实际金额
+          info: this.info, // 备注
+          email: this.email, // 邮箱
+          orderId: this.orderId, // 订单的id
+          userId: this.userId, // 用户的id
+          payType: this.type // 支付方式
         }).then(res => {
           if (res.success === true) {
-            //设置支付时间
+            // 设置支付时间
             setStore('setTime', 1800)
             setStore('price', this.money)
-            //设置是不是自定义金额
+            // 设置是不是自定义金额
             setStore('isCustom', this.isCustom)
             if (this.payType === 1) {
               this.$router.push({path: '/order/alipay'})
             } else if (this.payType === 2) {
               this.$router.push({path: '/order/wechat'})
-            /*} else if (this.payType === 3) {
-              this.$router.push({path: '/order/qqpay'})*/
+            /* } else if (this.payType === 3) {
+              this.$router.push({path: '/order/qqpay'}) */
             } else {
               this.$router.push({path: '/order/alipay'})
             }

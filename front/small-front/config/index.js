@@ -29,13 +29,13 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/member/*': {
-        target: 'http://192.168.0.191:8888'  // 请求本地 需要SMall后台项目 默认127.0.0.1:7777
+        target: 'http://localhost:7777'  // 请求本地 需要SMall后台项目 默认127.0.0.1:7777
       },
       '/goods/*': {
-        target: 'http://192.168.0.191:8888'  // 请求本地 需要SMall后台项目 默认127.0.0.1:7777
+        target: 'http://localhost:7777'  // 请求本地 需要SMall后台项目 默认127.0.0.1:7777
       },
       '/item/*':{
-        target: 'http://192.168.0.191:8888'  // 这个是专门用来请求那个分类导航的
+        target: 'http://localhost:7777'  // 这个是专门用来请求那个分类导航的
       }
     },
    /* proxyTable: {

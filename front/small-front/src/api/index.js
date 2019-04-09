@@ -3,7 +3,7 @@ import http from './public'
 export const userLogin = (params) => {
   return http.fetchPost('/member/login', params)
 }
-// 退出登陆
+// 退出登陆------------------------------------------
 export const loginOut = (params) => {
   return http.fetchGet('/member/loginOut', params)
 }
@@ -31,7 +31,7 @@ export const thanksList = (params) => {
 export const productHome = (params) => {
   return http.fetchGet('/goods/home', params)
 }
-// 首页接口-------------------------------------------
+// 首页接口
 export const navList = (params) => {
   return http.fetchGet('/goods/navList', params)
 }
@@ -48,11 +48,11 @@ export const geetest = (params) => {
   return http.fetchGet('/member/geetestInit?t=' + (new Date()).getTime(), params)
 }
 
-//增加的分类列表api--------------------------
+// 增加的分类列表api--------------------------
 export const catList = (params) => {
   return http.fetchGet('/item/catList', params)
 }
-//分类导航里面的主导航-------------------------
+// 分类导航里面的主导航-------------------------
 export const catMainList = (params) => {
   return http.fetchGet('/item/catMainList', params)
 }

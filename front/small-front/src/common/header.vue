@@ -169,6 +169,7 @@
   import catogoryNav from '/components/catogoryNav'
   import { mapMutations, mapState } from 'vuex'
   import { getCartList, cartDel, getQuickSearch } from '/api/goods'
+  /* import { loginOut, navList } from '/api/index' */
   import { loginOut, navList } from '/api/index'
   import { setStore, getStore, removeStore } from '/utils/storage'
   // import store from '../store/'
@@ -388,23 +389,23 @@
       }
     },
     mounted () {
-      this._getNavList()
-      //所以这里每次刷新都会获取本地用户的标志
+      // this._getNavList()
+      // 所以这里每次刷新都会获取本地用户的标志
       this.token = getStore('token')
-      //这里的login是从vuex里面的辅助函数mapstate里面获取
+      // 这里的login是从vuex里面的辅助函数mapstate里面获取
       if (this.login) {
         this._getCartList()
       } else {
-        //网页初始化，开始初始化购物车，从本地获取，放入到vuex里面
+        // 网页初始化，开始初始化购物车，从本地获取，放入到vuex里面
         this.INIT_BUYCART()
       }
-      //计算出那个掉落下来的那个效果,滑动的距离大于100了就要掉落下来，还要计算出购物车动画的坐标位置
+      // 计算出那个掉落下来的那个效果,滑动的距离大于100了就要掉落下来，还要计算出购物车动画的坐标位置
       this.navFixed()
       this.getPage()
       window.addEventListener('scroll', this.navFixed)
       window.addEventListener('resize', this.navFixed)
       if (typeof (this.$route.query.key) !== undefined) {
-        //这里的意思是我在输入框里面输入东西了之后，等我跳转页面的时候还是在
+        // 这里的意思是我在输入框里面输入东西了之后，等我跳转页面的时候还是在
         this.input = this.$route.query.key
       }
     },
