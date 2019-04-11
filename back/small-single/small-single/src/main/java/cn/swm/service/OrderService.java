@@ -22,4 +22,6 @@ public interface OrderService {
 
     OrderDetail getOrderDetail(String orderId);
 
+    int getOrderCountState(int state);
+
 }

@@ -173,6 +173,19 @@ public class OrderServiceImpl implements OrderService {
     }
 
     /**
+     * 根据订单的状态来查询订单的数量，返回到后台管理系统的欢迎页面展示
+     * @param state
+     * @return
+     */
+    @Override
+    public int getOrderCountState(int state) {
+        TbOrderExample tbOrderExample = new TbOrderExample();
+        TbOrderExample.Criteria criteria = tbOrderExample.createCriteria();
+        criteria.andStatusEqualTo(state);
+        return (int)tbOrderMapper.countByExample(tbOrderExample);
+    }
+
+    /**
      * 在查询的时候就判断所有的订单哪些应该要取消，超时没有支付的订单应该取消
      * @return
      */

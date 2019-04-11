@@ -25,7 +25,7 @@ public class SystemServiceImpl implements SystemService {
     @Autowired
     private TbLogMapper tbLogMapper;
 
-    @Value("1")
+    @Value("${BASE_ID}")
     private String BASE_ID;
 
     @Override

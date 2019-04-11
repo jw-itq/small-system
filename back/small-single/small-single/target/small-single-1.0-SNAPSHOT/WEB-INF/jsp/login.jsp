@@ -3,12 +3,13 @@
 <html lang="en">
 <head>
     <title>SMall后台管理系统</title>
-    <link rel="Shortcut Icon" href="icon/all.png" />
+    <link rel="shortcut icon " href="icon/s.png" />
     <!-- Meta tag Keywords -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="SMall后台管理系统 v1.0,SMall,SMall购物商城后台管理系统">
     <meta name="description" content="SMall后台管理系统 v1.0，是一款电商后台管理系统，适合中小型CMS后台系统。">
+
     <script type="application/x-javascript">
         addEventListener("load", function() {
             setTimeout(hideURLbar, 0);
@@ -42,7 +43,7 @@
             a.appendChild(r);
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>--%>
-    <script>
+    <%--<script>
         var _hmt = _hmt || [];
         (function() {
             var hm = document.createElement("script");
@@ -50,7 +51,7 @@
             var s = document.getElementsByTagName("script")[0];
             s.parentNode.insertBefore(hm, s);
         })();
-    </script>
+    </script>--%>
 
     <style>
         .title,h6{

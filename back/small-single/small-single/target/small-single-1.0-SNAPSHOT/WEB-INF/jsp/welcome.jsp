@@ -38,6 +38,8 @@
     }
 </style>
 <body>
+
+
 <section id="container" >
     <!--main content start-->
     <section id="main-content">
@@ -98,12 +100,84 @@
                 </div>
             </div>
             <!--state overview end-->
+            <div class="col-lg-8" style="width: 100%;">
+                <!--work progress start-->
+                <section class="panel">
+                    <div class="panel-body progress-panel">
+                        <div class="task-progress">
+                            <h1>待处理事项</h1>
+                            <p>shiwanming</p>
+                        </div>
+                        <%--<div class="task-option">
+                            <select class="styled">
+                                <option>Exrick</option>
+                                <option>欢迎您加入开发</option>
+                            </select>
+                        </div>--%>
+                    </div>
+                    <table class="table table-hover personal-task">
+                        <%--0：未付款 1：已付款 2：未发货 3：已发货 4：交易成功 5：交易失败--%>
+                        <tbody>
+                        <tr>
+                            <td>
+                                未付款订单：
+                            </td>
+                            <td> <span style="margin-top: -1px" class="count5 label label-danger pull-left r-activity">0</span></td>
+                            <td>
+                                已经付款的订单：
+                            </td>
+                            <td> <span style="margin-top: -1px" class="count6 label label-danger pull-left r-activity">0</span></td>
+
+                            <td>
+                                未发货订单：
+                            </td>
+                            <td> <span style="margin-top: -1px" class="count7 label label-danger pull-left r-activity">0</span></td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                已经发货订单：
+                            </td>
+                            <td> <span style="margin-top: -1px" class="count8 label label-danger pull-left r-activity">0</span></td>
+
+                            <td>
+                                交易成功订单：
+                            </td>
+                            <td> <span style="margin-top: -1px" class="count9 label label-danger pull-left r-activity">0</span></td>
+
+                            <td>
+                                交易失败订单：
+                            </td>
+                            <td> <span style="margin-top: -1px" class="count10 label label-danger pull-left r-activity">0</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                               <%-- <a href="https://www.bilibili.com/video/av23121122/" target="_blank">宣传视频(点我观看)</a>--%>
+                                急需补货商品数：
+                            </td>
+                            <td> <span style="margin-top: -1px" class="label label-danger pull-left r-activity">10</span></td>
+
+                            <td>
+                                缺货商品数：
+                            </td>
+                            <td> <span style="margin-top: -1px" class="label label-danger pull-left r-activity">10</span></td>
+
+                            <td>
+                                广告位即将到期：
+                            </td>
+                            <td> <span style="margin-top: -1px" class="label label-danger pull-left r-activity">10</span></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <!--work progress end-->
+            </div>
 
             <div class="row">
                 <div class="col-lg-7">
                     <!--custom chart start-->
                     <div class="border-head">
-                        <h3>系统统计</h3>
+                        <h3>系统统计(模拟数据)</h3>
                     </div>
                     <div class="custom-bar-chart">
                         <ul class="y-axis">
@@ -176,7 +250,7 @@
                                         公告
                                     </a>
                                 </li>
-                                <li>
+                                <%--<li>
                                     <a href="#comments" data-toggle="tab">
                                         评论
                                     </a>
@@ -185,7 +259,7 @@
                                     <a href="#recent" data-toggle="tab">
                                         最新通知
                                     </a>
-                                </li>
+                                </li>--%>
                             </ul>
                         </header>
                         <div class="panel-body">
@@ -201,26 +275,16 @@
                                                 <span id="hello"></span>
                                                 现在时间是：<span id="currentTime"></span></a>
                                             <p><br>SMall是基于SOA架构的大型开源分布式电商B2C购物商城，前后端开发分离，前台
-                                                基于Vue全家桶开发，前台商城演示地址：<a href="http://SMall.exrick.cn" target="_blank">点我查看</a><br><br>
-                                                后台几乎完成所有功能开发，你所看到的几乎皆为真实后台数据，为避免数据遭恶意修改，测试体验账号只具备查看权限。
-                                                后台主要使用技术有Dubbo/SSM/Elasticsearch/Redis/MySQL/ActiveMQ/Shiro/Zookeeper等<br><br>
-                                                Github后台源码：<a href="https://github.com/Exrick/SMall" target="_blank">
-                                                    <img src="https://img.shields.io/github/stars/Exrick/SMall.svg?style=social&label=Stars">
-                                                    <img src="https://img.shields.io/github/forks/Exrick/SMall.svg?style=social&label=Fork"></a>
-                                                前台：<a href="https://github.com/Exrick/SMall-front" target="_blank">
-                                                    <img src="https://img.shields.io/github/stars/Exrick/SMall-front.svg?style=social"></a><br>
-                                                Fork或下载前请动动手指Star一下~<br><br>
-                                                技术疑问交流群：475743731（限Star或捐赠好心人加入，可免费获取最新源码及
-                                                <a href="https://themeforest.net/item/flatlab-bootstrap-3-responsive-admin-template/5902687" target="_blank">UI框架 </a>等资源）
-                                                <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=7b60cec12ba93ebed7568b0a63f22e6e034c0d1df33125ac43ed753342ec6ce7">
-                                                    <img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="Exrick的技术交流群" title="Exrick的技术交流群">
-                                                </a><br><br>
-                                                作者目前大四，项目还有许多不足与更多需要学习的地方，期待您的指点与赞赏捐赠支持！
+                                                基于Vue全家桶开发<br><br>
+                                                后台几乎完成所有功能开发，你所看到的几乎皆为真实后台数据，为避免数据遭恶意修改，测试体验账号只具备查看权限。<br><br>
+                                                后台有两个版本，本项目是第二个版本<br><br>
+                                                第二个版本所使用的技术主要有SSM/Elasticsearch/Redis/MySQL/Shiro等<br><br>
+                                                第一个版本主要使用技术有Dubbo/SSM/Elasticsearch/Redis/MySQL/ActiveMQ/Shiro/Zookeeper等<br><br>
                                             </p>
                                         </div>
                                     </article>
                                 </div>
-                                <div style="overflow-y: scroll;height: 320px;margin: -15px -15px 0 0" class="tab-pane" id="comments">
+                                <%--<div style="overflow-y: scroll;height: 320px;margin: -15px -15px 0 0" class="tab-pane" id="comments">
                                     <article class="media">
                                         <div id="SOHUCS" sid="12345678"></div>
                                     </article>
@@ -231,14 +295,14 @@
                                         <img width="230px" height="230px" src="icon/alipay.png">
                                         <img width="230px" height="230px" src="icon/wechat.png">
                                     </div>
-                                </div>
+                                </div>--%>
                             </div>
                         </div>
                     </section>
                     <!--widget end-->
                 </div>
             </div>
-            <div class="row">
+            <%--<div class="row">
                 <div class="col-lg-4">
                     <!--user info table start-->
                     <section class="panel">
@@ -388,8 +452,8 @@
                     </section>
                     <!--work progress end-->
                 </div>
-            </div>
-            <div class="row">
+            </div>--%>
+            <%--<div class="row">
                 <div class="col-lg-8">
                     <!--timeline start-->
                     <section class="panel">
@@ -610,18 +674,19 @@
                     </section>
                     <!--twitter feedback end-->
                 </div>
-            </div>
+            </div>--%>
         </section>
     </section>
     <!--main content end-->
     <!--footer start-->
     <footer class="site-footer">
         <div class="text-center">
-            Copyright &copy;2017 <a href="http://blog.exrick.cn" target="_blank">exrick.cn</a> All Rights Reserved.
-            本后台系统由<a href="http://www.h-ui.net/" target="_blank"> H-ui</a>、<a href="https://themeforest.net/item/flatlab-bootstrap-3-responsive-admin-template/5902687" target="_blank">FlatLab </a>提供前端静态页面支持
+            Copyright &copy;2019 <a href="https://github.com/shiwanming" target="_blank">shiwanming</a> All Rights Reserved.
+            本后台系统由<a href="http://www.h-ui.net/" target="_blank"> H-ui</a>、<a href="https://themeforest.net/item/flatlab-bootstrap-3-responsive-admin-template/5902687" target="_blank">FlatLab </a>提供前端静态页面支持，
             <a href="#" class="go-top">
                 <i class="icon-angle-up"></i>
-            </a>
+            </a>参考了
+            <a href="https://github.com/Exrick/xmall">Exrick</a>的项目
         </div>
     </footer>
     <!--footer end-->
@@ -644,7 +709,7 @@
 <!--common script for all pages-->
 <script src="lib/flatlab/js/common-scripts.js"></script>
 
-<script charset="utf-8" type="text/javascript" src="lib/changyan.js" ></script>
+<%--<script charset="utf-8" type="text/javascript" src="lib/changyan.js" ></script>--%>
 <script async src="lib/busuanzi.pure.mini.js"></script>
 <script type="text/javascript" src="lib/layer/2.4/layer.js"></script>
 
@@ -678,10 +743,10 @@
     });
 
 
-    window.changyan.api.config({
+   /* window.changyan.api.config({
         appid: 'cyrV7vlR4',
         conf: 'prod_3163726f95fdac5ad0531c2344fc86ea'
-    });
+    });*/
 
     //owl carousel
     $(document).ready(function() {
@@ -738,13 +803,93 @@
         }
     });
 
+    //统计用户待处理的事项
+    <%--0：未付款 1：已付款 2：未发货 3：已发货 4：交易成功 5：交易失败--%>
+    $.ajax({
+        url:"/order/countState/0",
+        type: 'GET',
+        success:function (data) {
+            countUp5(data.result);
+        },
+        error:function(XMLHttpRequest){
+            if(XMLHttpRequest.status!=200){
+                layer.alert('数据处理失败! 错误码:'+XMLHttpRequest.status+' 错误信息:'+JSON.parse(XMLHttpRequest.responseText).message,{title: '错误信息',icon: 2});
+            }
+        }
+    });
+
+    $.ajax({
+        url:"/order/countState/1",
+        type: 'GET',
+        success:function (data) {
+            countUp6(data.result);
+        },
+        error:function(XMLHttpRequest){
+            if(XMLHttpRequest.status!=200){
+                layer.alert('数据处理失败! 错误码:'+XMLHttpRequest.status+' 错误信息:'+JSON.parse(XMLHttpRequest.responseText).message,{title: '错误信息',icon: 2});
+            }
+        }
+    });
+
+    $.ajax({
+        url:"/order/countState/2",
+        type: 'GET',
+        success:function (data) {
+            countUp7(data.result);
+        },
+        error:function(XMLHttpRequest){
+            if(XMLHttpRequest.status!=200){
+                layer.alert('数据处理失败! 错误码:'+XMLHttpRequest.status+' 错误信息:'+JSON.parse(XMLHttpRequest.responseText).message,{title: '错误信息',icon: 2});
+            }
+        }
+    });
+
+    $.ajax({
+        url:"/order/countState/3",
+        type: 'GET',
+        success:function (data) {
+            countUp8(data.result);
+        },
+        error:function(XMLHttpRequest){
+            if(XMLHttpRequest.status!=200){
+                layer.alert('数据处理失败! 错误码:'+XMLHttpRequest.status+' 错误信息:'+JSON.parse(XMLHttpRequest.responseText).message,{title: '错误信息',icon: 2});
+            }
+        }
+    });
+
+    $.ajax({
+        url:"/order/countState/4",
+        type: 'GET',
+        success:function (data) {
+            countUp9(data.result);
+        },
+        error:function(XMLHttpRequest){
+            if(XMLHttpRequest.status!=200){
+                layer.alert('数据处理失败! 错误码:'+XMLHttpRequest.status+' 错误信息:'+JSON.parse(XMLHttpRequest.responseText).message,{title: '错误信息',icon: 2});
+            }
+        }
+    });
+
+    $.ajax({
+        url:"/order/countState/5",
+        type: 'GET',
+        success:function (data) {
+            countUp10(data.result);
+        },
+        error:function(XMLHttpRequest){
+            if(XMLHttpRequest.status!=200){
+                layer.alert('数据处理失败! 错误码:'+XMLHttpRequest.status+' 错误信息:'+JSON.parse(XMLHttpRequest.responseText).message,{title: '错误信息',icon: 2});
+            }
+        }
+    });
+
     setTimeout('count()',2000);
     function count(){
         countUp4($("#busuanzi_value_site_uv").html());
     }
 
     //天气
-    $.ajax({
+    /*$.ajax({
         url:"/sys/weather",
         type: 'GET',
         success:function (data) {
@@ -773,10 +918,10 @@
                 layer.alert('数据处理失败! 错误码:'+XMLHttpRequest.status+' 错误信息:'+JSON.parse(XMLHttpRequest.responseText).message,{title: '错误信息',icon: 2});
             }
         }
-    });
+    });*/
 
     //本周热门商品
-    $.ajax({
+   /* $.ajax({
         url:"/sys/weekHot",
         type: 'GET',
         success:function (data) {
@@ -791,12 +936,12 @@
                 layer.alert('数据处理失败! 错误码:'+XMLHttpRequest.status+' 错误信息:'+JSON.parse(XMLHttpRequest.responseText).message,{title: '错误信息',icon: 2});
             }
         }
-    });
+    });*/
 
-    if($("#hot-title").text().length > 18){
+   /* if($("#hot-title").text().length > 18){
         $("#hot-title").text($("#hot-title").text().substring(0,18) +"...");
 
-    }
+    }*/
 
     $.ajax({
         url:"/sys/base",

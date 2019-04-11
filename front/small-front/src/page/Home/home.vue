@@ -8,8 +8,9 @@
           <transition name="fade">
             <div v-for="(item, i) in banner" v-if="i===mark" :key="i" style="position:absolute" @click="linkTo(item)" @mouseover="stopTimer" @mouseout="startTimer">
               <img v-if="item.picUrl" class="img1" :src="item.picUrl"/>
-              <img v-if="item.picUrl2"  class="img2 a" :src="item.picUrl2"/>
-              <img v-if="item.picUrl3"  class="img3 b" :src="item.picUrl3"/>
+              <!--注释是因为我没有3D的素材-->
+              <!--<img v-if="item.picUrl2"  class="img2 a" :src="item.picUrl2"/>
+              <img v-if="item.picUrl3"  class="img3 b" :src="item.picUrl3"/>-->
             </div>
           </transition>
         </div>

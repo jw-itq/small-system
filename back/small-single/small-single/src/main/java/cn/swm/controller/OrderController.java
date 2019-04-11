@@ -40,6 +40,12 @@ public class OrderController {
         return new ResultUtil<Object>().setData(result);
     }
 
+    @RequestMapping(value = "/order/countState/{state}",method = RequestMethod.GET)
+    public Result<Object> getOrderCountState(@PathVariable(value = "state")int state){
+        int result = orderService.getOrderCountState(state);
+        return new ResultUtil<Object>().setData(result);
+    }
+
     @RequestMapping(value = "/order/deliver",method = RequestMethod.POST)
     public Result<Object> orderDeliver(@RequestParam String orderId,
                                        @RequestParam String shippingName,

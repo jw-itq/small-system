@@ -141,7 +141,9 @@ public class ContentServiceImpl implements ContentService {
     /**
      * 更新导航栏的内容，同时也要更新缓存,
      * 在这里更新的时候，要注意图片的更新，因为在前台如果用户不选择图片的话，就应该还是要使用原来的图片，
-     * 所以说，这里就要查看到原来的TbPanelContent这个类的内容
+     * 所以说，这里就要查看到原来的TbPanelContent这个类的内容,
+     *
+     * 还有一点就是要说一下，保存图片的时候，要根据用户选择了多少张就保存多少张，并且更新以前的
      * @param tbPanelContent
      * @return
      */
