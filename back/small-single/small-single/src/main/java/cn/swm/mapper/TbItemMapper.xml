@@ -320,8 +320,11 @@
     ${orderDir}
   </select>
 
+  <!--
+  SearchItem getItemById(@Param("id")long id);
+  -->
   <select id="getItemById" resultType="cn.swm.pojo.front.SearchItem">
-    select
+    SELECT
     a.id productId,
     a.title productName,
     a.sell_point subTitle,
@@ -329,10 +332,11 @@
     a.image productImageBig,
     a.cid cid,
     b.name categoryName
-    from tb_item a
-    left join tb_item_cat b on a.cid=b.id
-    where
-    a.status=1 and a.id=#{id}
+    FROM
+    tb_item a
+    LEFT JOIN tb_item_cat b ON a.cid = b.id
+    WHERE
+    a.`status` = 1 AND a.id=#{id}
   </select>
 
   <select id="getItemList" resultType="cn.swm.pojo.front.SearchItem">

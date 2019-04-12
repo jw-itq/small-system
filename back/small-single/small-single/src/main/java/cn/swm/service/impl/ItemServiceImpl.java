@@ -104,6 +104,14 @@ public class ItemServiceImpl implements ItemService {
         if(tbItemMapper.updateByPrimaryKey(tbItem)!=1){
             throw new SmallException("修改商品状态的时候出错");
         }
+        //发布的时候，同步索引
+        if(state==1){
+            searchItemService.refreshItem(0,id);
+        }
+        //下架的时候，删除索引
+        if(state==0){
+            searchItemService.refreshItem(1,id);
+        }
         return 1;
     }
 
@@ -155,7 +163,8 @@ public class ItemServiceImpl implements ItemService {
         tbItemDesc.setItemDesc(itemDto.getDetail());
         tbItemDesc.setItemId(id);
         tbItemDesc.setUpdated(new Date());
-        if(tbItemDescMapper.updateByPrimaryKey(tbItemDesc)!=1){
+        //这里更新要使用大字段类型，不信查看源码
+        if(tbItemDescMapper.updateByPrimaryKeyWithBLOBs(tbItemDesc)!=1){
             throw new SmallException("更新商品详细信息的时候出错");
         }
 

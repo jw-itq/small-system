@@ -52,7 +52,8 @@ public class OrderFrontController {
         return new ResultUtil<Object>().setData(orderId);
     }
 
-    @RequestMapping(value = "/member/orderDetail",method = RequestMethod.POST)
+//    http://localhost:9999/member/orderDetail?orderId=155504705636469
+    @RequestMapping(value = "/member/orderDetail",method = RequestMethod.GET)
     public Result<Order> getOrderDetail(String orderId){
         Order order = orderFrontService.getOrder(orderId);
 

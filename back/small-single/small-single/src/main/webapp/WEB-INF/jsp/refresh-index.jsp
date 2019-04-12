@@ -26,6 +26,7 @@
 <body>
 <nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 商城管理 <span class="c-gray en">&gt;</span> 同步索引 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
 <div style="margin-left: 1vw;margin-right: 1vw" class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l"> <a class="btn btn-primary radius" onclick="refresh_index()" href="javascript:;"><i class="Hui-iconfont">&#xe645;</i> 一键手动同步索引</a></span> </div>
+<div style="margin-left: 1vw;margin-right: 1vw" class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l"> <a class="btn btn-primary radius" onclick="delete_index()" href="javascript:;"><i class="Hui-iconfont">&#xe645;</i> 一键手动删除所有索引</a></span> </div>
 <table class="table">
     <tr>
         <td class="va-t">
@@ -135,6 +136,32 @@
                     }
                     refresh();
                     layer.alert("同步成功",{icon: 1});
+                },
+                error:function(XMLHttpRequest){
+                    layer.close(index);
+                    layer.alert('数据处理失败! 错误码:'+XMLHttpRequest.status,{title: '错误信息',icon: 2});
+                }
+            });
+        });
+
+    }
+
+    /*删除索引*/
+    function delete_index(){
+        layer.confirm('确认要删除ES索引库吗？',{icon:3},function(index){
+            var index = layer.load(3);
+            $.ajax({
+                type: 'GET',
+                url: '/item/deleteIndex',
+                dataType: 'json',
+                success: function(data) {
+                    layer.close(index);
+                    if(data.success!=true){
+                        layer.alert(data.message,{title: '错误信息',icon: 2});
+                        return;
+                    }
+                    refresh();
+                    layer.alert("删除成功",{icon: 1});
                 },
                 error:function(XMLHttpRequest){
                     layer.close(index);

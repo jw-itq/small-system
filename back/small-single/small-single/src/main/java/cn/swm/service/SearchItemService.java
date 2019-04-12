@@ -9,4 +9,6 @@ public interface SearchItemService {
     EsInfo getESInfo();
 
     int importIndex();
+
+    int deleteAllIndex();
 }

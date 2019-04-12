@@ -11,6 +11,7 @@ import cn.swm.utils.HttpUtil;
 import com.google.gson.Gson;
 import org.apache.commons.collections.IterableMap;
 import org.apache.commons.lang3.StringUtils;
+import org.elasticsearch.action.admin.indices.delete.DeleteIndexResponse;
 import org.elasticsearch.action.bulk.BulkRequest;
 import org.elasticsearch.action.bulk.BulkRequestBuilder;
 import org.elasticsearch.action.bulk.BulkResponse;
@@ -59,7 +60,7 @@ public class SearchItemServiceImpl implements SearchItemService {
     /**
      * 更新商品信息的索引
      * @param type 表示类型，0：更新,1：删除
-     * @param itemId
+     * @param itemId 商品id
      * @return
      */
     @Override
@@ -72,6 +73,11 @@ public class SearchItemServiceImpl implements SearchItemService {
             if(type==0){
                 //根据商品id查询商品的信息
                 SearchItem item = tbItemMapper.getItemById(itemId);
+                if(item==null){
+                    log.error("根据id查询商品信息的时候，没查到，多半是因为status是0，也就不需要同步索引");
+                    return 0;
+                }
+
                 String image = item.getProductImageBig();
                 if(image!=null&&!"".equals(image)){
                     String[] strings = image.split(",");
@@ -180,6 +186,8 @@ public class SearchItemServiceImpl implements SearchItemService {
 
             /**
              * 这里本来是添加索引的映射的，但是我也不知道到底有没有用，再还没弄明白之前在这里些个注释，提醒下，，，，目的就是之前排序的时候出问题了
+             *
+             * 天啊，这段代码有着关键性的作用阿，啊啊啊啊
              */
             client.admin().indices().prepareCreate("item")
                     .addMapping("itemList", "salePrice", "type=integer")
@@ -195,5 +203,38 @@ public class SearchItemServiceImpl implements SearchItemService {
             throw new SmallException("导入ES索引库的时候出错");
         }
         return 1;
+    }
+
+    /**
+     * 批量删除所有的索引
+     * @return
+     */
+    @Override
+    public int deleteAllIndex() {
+        try {
+            Settings settings = Settings.builder().put("cluster.name",ES_CLUSTER_NAME).build();
+            TransportClient client = new PreBuiltTransportClient(settings)
+                    .addTransportAddress(new TransportAddress(InetAddress.getByName(ES_CONNECT_IP),9300));
+
+            //查询商品列表
+            List<SearchItem> itemlist = tbItemMapper.getItemList();
+
+            log.info("获取商品信息成功:"+itemlist.size());
+
+            //遍历商品列表，根据id来删除
+            /*for(SearchItem item : itemlist){
+                DeleteResponse deleteResponse = client.prepareDelete(ITEM_INDEX,ITEM_TYPE,String.valueOf(item.getProductId())).get();
+            }*/
+            DeleteIndexResponse dResponse = client.admin().indices().prepareDelete(ITEM_INDEX)
+                    .execute().actionGet();
+
+            log.info("删除索引信息成功");
+
+            client.close();
+        }catch (Exception e){
+            e.printStackTrace();
+            throw new SmallException("删除ES索引库的时候出错");
+        }
+        return 0;
     }
 }

@@ -166,7 +166,7 @@ public class OrderFrontServiceImpl implements OrderFrontService {
 
         //createDate
         SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm");
-        String createDate = formatter.format(tbOrder.getCloseTime());
+        String createDate = formatter.format(tbOrder.getCreateTime());
         order.setCreateDate(createDate);
 
         //payDate

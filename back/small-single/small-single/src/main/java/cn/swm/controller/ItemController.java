@@ -232,4 +232,11 @@ public class ItemController {
         return new ResultUtil<Object>().setData(null);
     }
 
+    //删除索引库
+    @RequestMapping(value = "/item/deleteIndex",method = RequestMethod.GET)
+    public Result<Object> deleteAllIndex(){
+        searchItemService.deleteAllIndex();
+        return new ResultUtil<Object>().setData(null);
+    }
+
 }

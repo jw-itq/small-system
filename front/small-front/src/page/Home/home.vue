@@ -80,7 +80,7 @@
   import YShelf from '/components/shelf'
   import product from '/components/product'
   import mallGoods from '/components/mallGoods'
-  import { setStore, getStore} from '/utils/storage.js'
+  import { setStore, getStore } from '/utils/storage.js'
   export default {
     data () {
       return {

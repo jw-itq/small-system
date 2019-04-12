@@ -8,9 +8,7 @@
           <ul class="Z_MenuList_ul">
             <li class="list-item alt" v-for="(itm, index) in panelData2" :key="index">
               <!--<router-link to="/goods"><a @click="changePage()">全部商品</a></router-link>-->
-              <router-link to="/search">
-                <a class="nav-side-item" @click="linkToSearch(item)" v-for="(item, index) in itm" :key="index">{{ item +" /"}}</a>
-              </router-link>
+              <a class="nav-side-item" @click="linkToSearch(item)" v-for="(item, index) in itm" :key="index">{{ item +" /"}}</a>
             </li>
           </ul>
         </div>
@@ -23,15 +21,13 @@
             </div>-->
             <ul>
               <li v-for="(items, index) in itm.classNav" :key="index" class="detail-item-row">
-                <router-link to="/search">
                   <span class="detail-item-title" @click="linkToSearch(item)">{{items.title}}
                     <!--<span class="glyphicon glyphicon-menu-right"></span>-->
                   </span>
-                </router-link>
 
-                <router-link to="/search" v-for="(item, subIndex) in items.tags" :key="subIndex">
+                <span v-for="(item, subIndex) in items.tags" :key="subIndex">
                   <span class="detail-item" @click="linkToSearch(item)">{{item}}</span>
-                </router-link>
+                </span>
               </li>
             </ul>
           </div>
@@ -51,8 +47,8 @@
     name: 'catogoryNav',
     data () {
       return {
-        panelData1:[],
-        panelData2:[]
+        panelData1: [],
+        panelData2: []
       }
     },
     methods: {
@@ -67,11 +63,19 @@
         })
       },
 
-      linkToSearch(item){
+      /*
+      * this.$router.push({
+            path: '/refreshsearch',
+            query: {
+              key: this.input
+            }
+          })
+      * */
+      linkToSearch (item) {
         this.$router.push({
           path: '/search',
           query: {
-            key: item
+            key: item.toString()
           }
         })
       }
@@ -83,113 +87,113 @@
 
   }
 
-  $(function() {
-    var bBtn = false;
-    var bW=false;
-    var navW=0;
-    $('#Z_TypeList').hover(function() {
-        $('.Z_MenuList').queue(function(next) {
+  $(function () {
+    var bBtn = false
+    var bW = false
+    var navW = 0
+    $('#Z_TypeList').hover(function () {
+        $('.Z_MenuList').queue(function (next) {
           $(this).css({
             'display': 'block',
-            'overflow':'hidden'
-          });
-          next();
+            'overflow': 'hidden'
+          })
+          next()
         }).animate({
             'height': '+=435px'
           },
           400,
-          function() {
-            $('ul.Z_MenuList_ul>li').each(function() {
+          function () {
+            $('ul.Z_MenuList_ul>li').each(function () {
 
-              $(this).hover(function() {
+              $(this).hover(function () {
 
-                  $(this).queue(function(next) {
+                  $(this).queue(function (next) {
 
-                    var ins = $(this).index();
-                    $(this).addClass('menuItemColor');
+                    var ins = $(this).index()
+                    $(this).addClass('menuItemColor')
 
                     $('.subView').css({
                       'width': 0,
                       'display': 'none'
-                    });
+                    })
 
-                    function toNavW(){
+                    function toNavW () {
                       if (!bBtn) {
-                        if(parseInt($('header').width())>=1190){
-                          bW=true;
-                        }else{
-                          bW=false;
+                        if (parseInt($('header').width()) >= 1190) {
+                          bW = true
+                        } else {
+                          bW = false
                         }
 
-                        navW=bW?775:565;
+                        navW = bW ? 775 : 565
 
-                        $('.Z_SubList').addClass('box-shadow');
+                        $('.Z_SubList').addClass('box-shadow')
                         $('.Z_SubList').stop().css({
                           'display': 'block'
                         }).animate({
                           'width': navW
-                        });
+                        })
                         $('.subView').eq(ins).stop().css({
                           'display': 'block'
 
                         }).animate({
                             'width': navW
                           },
-                          function() {
-                            bBtn = true;
-                          });
+                          function () {
+                            bBtn = true
+                          })
                       } else {
                         $('.subView').eq(ins).stop().css({
                           'display': 'block'
                         }).animate({
                             'width': navW
                           },
-                          0);
+                          0)
                       }
                     }
-                    toNavW();
-                    $(document).bind('ready',toNavW);
-                    $(window).bind('resize',function(){
-                      $(document).unbind('ready',toNavW);
-                      $(document).bind('ready',toNavW);
-                    });
-                    next();
-                  });
+                    toNavW()
+                    $(document).bind('ready', toNavW)
+                    $(window).bind('resize', function () {
+                      $(document).unbind('ready', toNavW)
+                      $(document).bind('ready', toNavW)
+                    })
+                    next()
+                  })
 
-                  //$(this).find('h3,p a').css('color', '#fff');
+                  // $(this).find('h3,p a').css('color', '#fff');
                 },
-                function() {
-                  $(this).removeClass('menuItemColor');
-                });
+                function () {
+                  $(this).removeClass('menuItemColor')
+                })
 
             });
 
           });
 
       },
-      function() {
-        $(this).queue(function(next) {
-          bBtn = false;
+      function () {
+        $(this).queue(function (next) {
+          bBtn = false
           $(this).find('.Z_MenuList').stop().css({
             'height': 0,
             'display': 'none'
-          });
+          })
           $('.subView').css({
             'width': 0,
             'display': 'none'
-          });
-          $('.Z_SubList').removeClass('box-shadow');
+          })
+          $('.Z_SubList').removeClass('box-shadow')
           $('.Z_SubList').css({
             'width': 0,
             'display': 'none'
-          });
-          $('ul.Z_MenuList_ul>li').each(function() {
+          })
+          $('ul.Z_MenuList_ul>li').each(function () {
             $(this).removeClass('menuItemColor');
-            //$(this).find('h3').css('color', '#000');
-            //$(this).find('p a').css('color', '#888');
+            // $(this).find('h3').css('color', '#000');
+            // $(this).find('p a').css('color', '#888');
           })
 
-          next();
+          next()
 
         });
 

@@ -40,6 +40,6 @@ public class TbItemDesc {
     }
 
     public void setItemDesc(String itemDesc) {
-        this.itemDesc = itemDesc == null ? null : itemDesc.trim();
+        this.itemDesc = itemDesc;
     }
 }

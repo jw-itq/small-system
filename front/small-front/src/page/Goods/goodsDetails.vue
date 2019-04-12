@@ -157,7 +157,7 @@
       YShelf, BuyNum, YButton
     },
     created () {
-      //从前面登录开始存储的query值中获取，
+      // 从前面登录开始存储的query值中获取，
       let id = this.$route.query.productId
       this._productDet(id)
       this.userId = getStore('userId')

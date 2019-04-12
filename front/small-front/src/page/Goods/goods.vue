@@ -163,7 +163,7 @@
       this.windowHeight = window.innerHeight
       this.windowWidth = window.innerWidth
       this._getAllGoods()
-      //推荐的商品就是在用户没有搜索到的时候出现的商品
+      // 推荐的商品就是在用户没有搜索到的时候出现的商品
       recommend().then(res => {
         let data = res.result
         this.recommendPanel = data[0]

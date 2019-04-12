@@ -341,7 +341,7 @@
         this.num = query.num
         this._productDet(this.productId)
       } else {
-        //获得购物车的列表
+        // 获得购物车的列表
         this._getCartList()
       }
       this._addressList()
