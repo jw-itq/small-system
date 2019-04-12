@@ -147,4 +147,17 @@ public class SystemServiceImpl implements SystemService {
         }
         return 1;
     }
+
+    /**
+     * 保存日志信息,这个方法看着简单，其实背后的调用还是很复杂的，
+     * @param tbLog
+     * @return
+     */
+    @Override
+    public int addLog(TbLog tbLog) {
+        if(tbLogMapper.insert(tbLog)!=1){
+            throw new SmallException("保存日志信息的时候出错");
+        }
+        return 1;
+    }
 }

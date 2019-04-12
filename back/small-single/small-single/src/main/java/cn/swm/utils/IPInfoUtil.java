@@ -110,6 +110,6 @@ public class IPInfoUtil {
     }
 
     public static void main(String[] args){
-        log.info(getIpInfo("171.88.85.176"));
+        log.info(getIpInfo("10.66.197.32"));
     }
 }

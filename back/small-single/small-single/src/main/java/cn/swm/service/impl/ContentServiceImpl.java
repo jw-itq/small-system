@@ -183,6 +183,7 @@ public class ContentServiceImpl implements ContentService {
     public String getIndexRedis() {
         try {
             String result = jedisClient.get(PRODUCT_HOME);
+            return result;
         }catch (Exception e){
             log.error(e.toString());
         }
@@ -397,7 +398,7 @@ public class ContentServiceImpl implements ContentService {
     }
 
     /**
-     * 得到分类板块的信息
+     * 得到分类板块中那个推荐板块的信息的信息
      * @return
      */
     @Override

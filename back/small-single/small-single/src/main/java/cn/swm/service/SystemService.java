@@ -32,4 +32,6 @@ public interface SystemService {
     int getLogCount();
 
     int deleteLogById(int id);
+
+    int addLog(TbLog tbLog);
 }

@@ -406,6 +406,7 @@ public class UserServiceImpl implements UserService {
         TbUser oldTbUser = tbUserMapper.selectByPrimaryKey(tbUser.getId());
         tbUser.setState(1);
         tbUser.setUpdated(new Date());
+        tbUser.setPassword(oldTbUser.getPassword());
         tbUser.setCreated(oldTbUser.getCreated());
         if(tbUserMapper.updateByPrimaryKey(tbUser)!=1){
             throw new SmallException("更新用户的时候出错");

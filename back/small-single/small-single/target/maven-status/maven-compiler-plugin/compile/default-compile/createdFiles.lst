@@ -24,8 +24,9 @@ cn/swm/pojo/TbOrderShippingExample.class
 cn/swm/controller/AddressController.class
 cn/swm/pojo/front/AllGoodsResult.class
 cn/swm/pojo/TbExpress.class
-cn/swm/pojo/TbLog.class
 cn/swm/pojo/TbDict.class
+cn/swm/pojo/TbLog.class
+cn/swm/common/aop/SystemLogAspect$SaveSystemLogThread.class
 cn/swm/common/shiro/MyShiroFilterFactoryBean.class
 cn/swm/common/shiro/MyRealm.class
 cn/swm/service/OrderService.class
@@ -108,8 +109,10 @@ cn/swm/mapper/TbItemCatMapper.class
 cn/swm/mapper/TbUserMapper.class
 cn/swm/pojo/TbItemCatExample$Criteria.class
 cn/swm/pojo/TbExpressExample$Criteria.class
+cn/swm/common/annotation/SystemControllerLog.class
 cn/swm/pojo/TbOrderItemExample$Criterion.class
 cn/swm/service/impl/CartServiceImpl.class
+cn/swm/common/aop/SystemLogAspect.class
 cn/swm/controller/DictController.class
 cn/swm/pojo/dto/ItemDto.class
 cn/swm/utils/ObjectUtil.class
@@ -157,6 +160,7 @@ cn/swm/controller/PayController.class
 cn/swm/pojo/TbPanelContent.class
 cn/swm/pojo/TbMemberExample.class
 cn/swm/pojo/TbUserExample.class
+cn/swm/common/annotation/SystemServiceLog.class
 cn/swm/service/impl/ContentServiceImpl$1.class
 cn/swm/service/ExpressService.class
 cn/swm/common/jedis/JedisClientPool.class
@@ -213,6 +217,7 @@ cn/swm/pojo/common/City.class
 cn/swm/service/impl/RegisterServiceImpl.class
 cn/swm/pojo/TbLogExample.class
 cn/swm/pojo/TbShiroFilterExample.class
+cn/swm/utils/ThreadPoolUtil.class
 cn/swm/pojo/TbExpressExample.class
 cn/swm/pojo/TbOrderExample$Criterion.class
 cn/swm/controller/FrontMemberController.class
