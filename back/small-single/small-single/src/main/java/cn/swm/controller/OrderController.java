@@ -72,7 +72,7 @@ public class OrderController {
         return new ResultUtil<Object>().setData(null);
     }
 
-    @RequestMapping(value = "/order/del/{ids}",method = RequestMethod.GET)
+    @RequestMapping(value = "/order/del/{ids}",method = RequestMethod.DELETE)
     public Result<Object> deleteOrder(@PathVariable("ids")String[] ids){
         for(String id : ids){
             orderService.deleteOrderById(id);

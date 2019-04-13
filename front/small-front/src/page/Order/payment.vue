@@ -121,7 +121,7 @@
         payNow: '立刻支付',
         submit: false,
         nickName: '',
-        money: '1.00',// 默认价格
+        money: '1.00', // 默认价格
         info: '',
         email: '',
         orderId: '',
