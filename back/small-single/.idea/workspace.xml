@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33bc3088-6d0c-4cf6-b35b-f4ec7c52f9a7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/small-single/target/classes/cn/swm/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/small-single/target/classes/cn/swm/controller/OrderController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-single/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/small-single/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-single/target/small-single-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/small-single/target/small-single-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-single/target/small-single-1.0-SNAPSHOT/WEB-INF/classes/cn/swm/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/small-single/target/small-single-1.0-SNAPSHOT/WEB-INF/classes/cn/swm/controller/OrderController.class" afterDir="false" />
-    </list>
+    <list default="true" id="33bc3088-6d0c-4cf6-b35b-f4ec7c52f9a7" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/small-single/target/" />
     <ignored path="$PROJECT_DIR$/MybatisGeneratoer/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -118,8 +113,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/small-single/src/main/java/cn/swm/controller/OrderController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="958">
-              <caret line="74" column="76" selection-start-line="74" selection-start-column="76" selection-end-line="74" selection-end-column="76" />
+            <state relative-caret-position="361">
+              <caret line="76" column="29" lean-forward="true" selection-start-line="76" selection-start-column="29" selection-end-line="76" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -409,19 +404,7 @@
             <path>
               <item name="small-single" type="b2602c69:ProjectViewProjectNode" />
               <item name="small-single" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="small-single" type="b2602c69:ProjectViewProjectNode" />
-              <item name="small-single" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -435,7 +418,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555151118646" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555152061120" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../backup/small-system/data/xmall" />
@@ -595,12 +578,12 @@
       <workItem from="1554768631237" duration="18232000" />
       <workItem from="1554971269013" duration="21331000" />
       <workItem from="1555027301230" duration="31821000" />
-      <workItem from="1555114162050" duration="25252000" />
+      <workItem from="1555114162050" duration="25867000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="379244000" />
+    <option name="totallyTimeSpent" value="379859000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1920" height="1018" extended-state="6" />
@@ -612,7 +595,7 @@
       <window_info id="Web" order="4" side_tool="true" />
       <window_info id="Designer" order="5" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="7" visible="true" weight="0.19914347" />
+      <window_info active="true" content_ui="combo" id="Project" order="7" visible="true" weight="0.19914347" />
       <window_info anchor="bottom" id="Spring" order="0" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
@@ -623,7 +606,7 @@
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Find" order="9" weight="0.35673186" />
-      <window_info active="true" anchor="bottom" id="Run" order="10" visible="true" weight="0.43958575" />
+      <window_info anchor="bottom" id="Run" order="10" visible="true" weight="0.29229" />
       <window_info anchor="bottom" id="Debug" order="11" weight="0.20828539" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
@@ -1085,8 +1068,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/small-single/src/main/java/cn/swm/controller/OrderController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="958">
-          <caret line="74" column="76" selection-start-line="74" selection-start-column="76" selection-end-line="74" selection-end-column="76" />
+        <state relative-caret-position="361">
+          <caret line="76" column="29" lean-forward="true" selection-start-line="76" selection-start-column="29" selection-end-line="76" selection-end-column="29" />
         </state>
       </provider>
     </entry>
