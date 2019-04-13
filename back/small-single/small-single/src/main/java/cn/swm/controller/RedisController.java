@@ -25,4 +25,16 @@ public class RedisController {
         contentService.updateIndexRedis();
         return new ResultUtil<Object>().setData(null);
     }
+
+    @RequestMapping(value = "/redis/recommend/list",method = RequestMethod.GET)
+    public Result<Object> getRecommendRedis(){
+        String json = contentService.getRecommendRedis();
+        return new ResultUtil<Object>().setData(json);
+    }
+
+    @RequestMapping(value = "/redis/recommend/update",method = RequestMethod.GET)
+    public Result<Object> updateRecommendRedis(){
+        contentService.updateRecommendRedis();
+        return new ResultUtil<Object>().setData(null);
+    }
 }

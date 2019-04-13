@@ -59,4 +59,10 @@ public class PanelController {
         List<ZTreeNode> result =  panelService.getPanelList(0,false);
         return result;
     }
+
+    @RequestMapping(value = "/panel/other/list",method = RequestMethod.GET)
+    public List<ZTreeNode> getPanelOtherList(){
+        List<ZTreeNode> result = panelService.getPanelList(1,false);
+        return result;
+    }
 }

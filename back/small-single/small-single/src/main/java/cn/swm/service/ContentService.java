@@ -30,4 +30,8 @@ public interface ContentService {
 
     List<TbPanel> getRecommendGoods();
 
+    String getRecommendRedis();
+
+    int updateRecommendRedis();
+
 }

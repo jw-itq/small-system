@@ -410,7 +410,7 @@ public class ContentServiceImpl implements ContentService {
         try {
             String json = jedisClient.get(RECOMEED_PANEL);
             if(json!=null){
-                list = new Gson().fromJson(json,new TypeToken<List<TbItem>>(){}.getType());
+                list = new Gson().fromJson(json,new TypeToken<List<TbPanel>>(){}.getType());
                 log.info("读取了推荐板块的缓存");
                 return list;
             }
@@ -429,6 +429,26 @@ public class ContentServiceImpl implements ContentService {
             e.printStackTrace();
         }
         return list;
+    }
+
+    /**
+     * 获得推荐板块的缓存数据
+     * @return
+     */
+    @Override
+    public String getRecommendRedis() {
+        String json = jedisClient.get(RECOMEED_PANEL);
+        return json;
+    }
+
+    /**
+     * 刷新推荐板块的缓存
+     * @return
+     */
+    @Override
+    public int updateRecommendRedis() {
+        jedisClient.del(RECOMEED_PANEL);
+        return 1;
     }
 
     /**
@@ -464,6 +484,7 @@ public class ContentServiceImpl implements ContentService {
                 tbPanelContent.setSalePrice(tbItem.getPrice());
                 tbPanelContent.setProductName(tbItem.getTitle());
                 tbPanelContent.setSubTitle(tbItem.getSellPoint());
+                tbPanelContent.setProductImageBig(tbPanelContent.getPicUrl());
                 //这里为什么只需要设置一下，是因为，我最后只是要拿到contentlist这个list对象，对象没有改变
             }
         }

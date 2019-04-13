@@ -38,7 +38,7 @@ public class PanelServiceImpl implements PanelService {
      * 4，这一条是作者自加的一个捐赠的板块，所以属于其他板块，我在这里暂且忽略,因为只需要改变position的值
      *
      * 所以我现在要关心的就是1，2，3种情况，
-     * @param position 这里首先是controller那边传过来的自定义的值：0;-1
+     * @param position 这里首先是controller那边传过来的自定义的值：0;-1;还有可能是其它板块
      * @param showAll 表示是否含有轮播图
      *
      *                通过判断position和showall来判断查询的内容
@@ -60,7 +60,7 @@ public class PanelServiceImpl implements PanelService {
             position = 0;
             criteria.andTypeEqualTo(0);
         }
-        //首页板块
+        //position标示的是哪种类型的板块
         criteria.andPositionEqualTo(position);
 
         //设置排序的字段
