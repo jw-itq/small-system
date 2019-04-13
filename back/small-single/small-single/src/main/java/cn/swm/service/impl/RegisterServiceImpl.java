@@ -74,7 +74,7 @@ public class RegisterServiceImpl implements RegisterService {
         }
 
         List<TbMember> list = tbMemberMapper.selectByExample(tbMemberExample);
-        if(list!=null||list.size()>0){
+        if(list!=null&&list.size()>0){
             return false;
         }
         return true;

@@ -1,0 +1,13 @@
+127.0.0.1 - - [13/Apr/2019:12:43:25 +0800] "GET /member/checkLogin HTTP/1.1" 200 294 http-bio-7777-exec-2 386
+127.0.0.1 - - [13/Apr/2019:12:43:29 +0800] "GET /member/checkLogin HTTP/1.1" 200 294 http-bio-7777-exec-4 6
+127.0.0.1 - - [13/Apr/2019:12:43:30 +0800] "GET /item/catMainList HTTP/1.1" 200 277 http-bio-7777-exec-6 365
+127.0.0.1 - - [13/Apr/2019:12:43:30 +0800] "GET /goods/home HTTP/1.1" 200 19212 http-bio-7777-exec-7 448
+127.0.0.1 - - [13/Apr/2019:12:43:30 +0800] "GET /item/catList HTTP/1.1" 200 9449 http-bio-7777-exec-5 963
+127.0.0.1 - - [13/Apr/2019:12:43:32 +0800] "GET /member/checkLogin HTTP/1.1" 200 294 http-bio-7777-exec-8 4
+127.0.0.1 - - [13/Apr/2019:12:43:32 +0800] "GET /member/checkLogin HTTP/1.1" 200 294 http-bio-7777-exec-9 3
+127.0.0.1 - - [13/Apr/2019:12:43:33 +0800] "GET /member/geetestInit?t=1555130612661 HTTP/1.1" 200 151 http-bio-7777-exec-10 389
+127.0.0.1 - - [13/Apr/2019:12:43:34 +0800] "GET /member/checkLogin HTTP/1.1" 200 294 http-bio-7777-exec-2 3
+127.0.0.1 - - [13/Apr/2019:12:43:34 +0800] "GET /member/geetestInit?t=1555130614716 HTTP/1.1" 200 151 http-bio-7777-exec-1 144
+0:0:0:0:0:0:0:1 - - [13/Apr/2019:12:46:49 +0800] "GET /login HTTP/1.1" 200 8403 http-bio-7777-exec-1 636
+0:0:0:0:0:0:0:1 - - [13/Apr/2019:12:46:50 +0800] "GET /sys/base HTTP/1.1" 200 486 http-bio-7777-exec-2 229
+0:0:0:0:0:0:0:1 - - [13/Apr/2019:12:46:50 +0800] "GET /geetestInit?t=1555130809755 HTTP/1.1" 200 100 http-bio-7777-exec-3 407

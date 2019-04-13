@@ -22,10 +22,10 @@ cn/swm/common/constant/CountConstant.class
 cn/swm/pojo/TbBaseExample$Criteria.class
 cn/swm/pojo/TbOrderShippingExample.class
 cn/swm/controller/AddressController.class
-cn/swm/pojo/TbExpress.class
 cn/swm/pojo/front/AllGoodsResult.class
-cn/swm/pojo/TbLog.class
+cn/swm/pojo/TbExpress.class
 cn/swm/pojo/TbDict.class
+cn/swm/pojo/TbLog.class
 cn/swm/common/aop/SystemLogAspect$SaveSystemLogThread.class
 cn/swm/common/shiro/MyShiroFilterFactoryBean.class
 cn/swm/common/shiro/MyRealm.class
