@@ -7,10 +7,7 @@ package cn.swm.common.annotation;
 JAVAC编译器，开发工具和其他程序可以用反射来了解你的类以及各种元素上有无任何标记，看你有什么标记，就去干相应的事
 * */
 
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
+import java.lang.annotation.*;
 
 /**
  * Target 说明了Annotation所修饰的对象范围
@@ -31,6 +28,7 @@ import java.lang.annotation.Target;
  */
 @Target({ElementType.PARAMETER, ElementType.METHOD}) // 作用在方法或者参数上
 @Retention(RetentionPolicy.RUNTIME)
+@Documented
 public @interface SystemControllerLog {
     String description()
             default "";

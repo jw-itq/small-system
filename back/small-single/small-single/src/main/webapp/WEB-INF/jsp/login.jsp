@@ -119,7 +119,7 @@
 
         <!--footer-->
         <div class="footer">
-            <p>&copy; 2019 SMall by shiwanming. Reference from the <a href="http://blog.exrick.cn" target="_blank">Exrick</a></p>
+            <p>&copy; 2019 SMall by <a href="https://github.com/shiwanming" target="_blank">shiwanming</a>. Reference from the <a href="http://blog.exrick.cn" target="_blank">Exrick</a></p>
         </div>
         <!--//footer-->
     </div>
@@ -205,7 +205,7 @@
     });
 
     function forgetPass(){
-        layer.alert('体验测试账号密码：test | test', {
+        layer.alert('体验测试账号密码：test | 123456', {
             icon: 4,
             title: "提示"
         });

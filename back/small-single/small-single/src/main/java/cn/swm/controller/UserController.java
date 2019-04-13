@@ -1,5 +1,6 @@
 package cn.swm.controller;
 
+import cn.swm.common.annotation.SystemControllerLog;
 import cn.swm.mapper.TbUserMapper;
 import cn.swm.pojo.TbPermission;
 import cn.swm.pojo.TbRole;
@@ -59,6 +60,7 @@ public class UserController {
      * @return
      */
     @RequestMapping(value = "/user/login",method = RequestMethod.POST)
+    @SystemControllerLog(description = "登陆系统")
     public Result<Object> login(String username, String password,
                                 String challenge, String validate, String seccode,
                                 HttpServletRequest request){
