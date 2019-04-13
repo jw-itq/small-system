@@ -5,7 +5,7 @@
         <ul class="c0">
           <h3 class="c1">订单服务</h3>
           <ul>
-            <li class="c2"><router-link to="/thanks"><a class="c3">购买指南</a></router-link></li>
+            <!--<li class="c2"><router-link to="/thanks"><a class="c3">购买指南</a></router-link></li>-->
             <li class="c2"><a class="c3" @click="open4">支付方式</a></li>
             <li class="c2"><a class="c3" @click="open5">送货政策</a></li>
           </ul>
