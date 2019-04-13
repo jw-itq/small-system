@@ -28,7 +28,7 @@
 <div style="margin-left: 1vw;margin-right: 1vw" class="cl pd-5 bg-1 bk-gray mt-20">
     <span class="l">
         <a class="btn btn-primary radius" onclick="refreshRecommendRedis()" href="javascript:;"><i class="Hui-iconfont">&#xe6bd;</i> 刷新推荐板块缓存</a>
-        <a class="btn btn-primary radius" onclick="refreshThankRedis()" href="javascript:;"><i class="Hui-iconfont">&#xe6bd;</i> 刷新捐赠板块缓存</a>
+        <%--<a class="btn btn-primary radius" onclick="refreshThankRedis()" href="javascript:;"><i class="Hui-iconfont">&#xe6bd;</i> 刷新捐赠板块缓存</a>--%>
     </span>
 </div>
 <table class="table">
@@ -43,12 +43,12 @@
                     <textarea name="recommend" id="recommend" class="textarea"  placeholder="当前推荐板块缓存已是最新" style="height: 250px;margin-bottom: 1vw"></textarea>
                 </div>
             </div>
-            <div class="row cl">
+            <%--<div class="row cl">
                 <label class="form-label col-xs-4 col-sm-1">捐赠板块缓存内容：</label>
                 <div class="formControls col-xs-6 col-sm-6">
                     <textarea name="thank" id="thank" class="textarea"  placeholder="当前捐赠板块缓存已是最新" style="height: 250px;margin-bottom: 1vw"></textarea>
                 </div>
-            </div>
+            </div>--%>
         </form>
     </div>
 </table>
@@ -90,7 +90,7 @@
         });
     }
 
-    getThankRedisData();
+    /*getThankRedisData();
     function getThankRedisData() {
         var index = layer.load(3);
         $.ajax({
@@ -113,7 +113,7 @@
                 });
             }
         });
-    }
+    }*/
 
     function refreshRecommendRedis() {
         layer.confirm('确认要刷新推荐板块缓存吗？',{icon:0},function(index){
@@ -142,7 +142,7 @@
         });
     }
 
-    function refreshThankRedis() {
+   /* function refreshThankRedis() {
         layer.confirm('确认要刷新捐赠板块缓存吗？',{icon:0},function(index){
             var index = layer.load(3);
             $.ajax({
@@ -167,7 +167,7 @@
                 }
             });
         });
-    }
+    }*/
 
     function msgSuccess(content){
         layer.alert(content,{icon: 1});
