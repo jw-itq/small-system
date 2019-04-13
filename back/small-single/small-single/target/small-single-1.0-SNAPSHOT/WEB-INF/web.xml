@@ -3,7 +3,7 @@
          xmlns="http://java.sun.com/xml/ns/javaee"
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
          id="WebApp_ID" version="2.5">
-  <display-name>xmall-manager-web</display-name>
+  <display-name>small-single</display-name>
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
@@ -48,7 +48,7 @@
 
   <!-- SpringMVC前端控制器 -->
   <servlet>
-    <servlet-name>small-manager-web</servlet-name>
+    <servlet-name>small-single</servlet-name>
     <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
     <!-- contextConfigLocation不是必须的，如果不配置，SpringMVC的配置文件默认在：WEB-INF/servlet的name+"-servlet.xml" -->
     <init-param>
@@ -59,7 +59,7 @@
   </servlet>
   <!--"/"拦截所有请求-->
   <servlet-mapping>
-    <servlet-name>small-manager-web</servlet-name>
+    <servlet-name>small-single</servlet-name>
     <url-pattern>/</url-pattern>
   </servlet-mapping>
 

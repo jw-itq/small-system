@@ -22,15 +22,15 @@
     <script type="text/javascript" src="lib/DD_belatedPNG_0.0.8a-min.js" ></script>
     <script>DD_belatedPNG.fix('*');</script>
     <![endif]-->
-    <title>SMall后台管理系统 v1.1</title>
-    <meta name="keywords" content="SMall后台管理系统 v1.1,SMall,SMall购物商城后台管理系统">
-    <meta name="description" content="SMall后台管理系统 v1.1，是一款电商后台管理系统，适合中小型CMS后台系统。">
+    <title>SMall后台管理系统 v1.0</title>
+    <meta name="keywords" content="SMall后台管理系统 v1.0,SMall,SMall购物商城后台管理系统">
+    <meta name="description" content="SMall后台管理系统 v1.0，是一款电商后台管理系统，适合中小型CMS后台系统。">
 </head>
 <body>
 <header class="navbar-wrapper">
     <div class="navbar navbar-fixed-top">
         <div class="container-fluid cl"> <a class="logo navbar-logo f-l mr-10 hidden-xs" href="/">SMall后台管理系统</a> <a class="logo navbar-logo-m f-l mr-10 visible-xs" href="/">SMall后台管理系统</a>
-            <span class="logo navbar-slogan f-l mr-10 hidden-xs">v1.1</span>
+            <span class="logo navbar-slogan f-l mr-10 hidden-xs">v1.0</span>
             <a aria-hidden="false" class="nav-toggle Hui-iconfont visible-xs" href="javascript:;">&#xe667;</a>
             <nav class="nav navbar-nav">
                 <ul class="cl">
@@ -124,14 +124,14 @@
                 </ul>
             </dd>
         </dl>
-        <dl id="menu-comments">
+        <%--<dl id="menu-comments">
             <dt><i class="Hui-iconfont">&#xe622;</i> 评论管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
             <dd>
                 <ul>
                     <li><a data-href="http://changyan.kuaizhan.com/" data-title="畅言评论管理" href="javascript:void(0)">畅言评论管理</a></li>
                 </ul>
             </dd>
-        </dl>
+        </dl>--%>
         <dl id="menu-member">
             <dt><i class="Hui-iconfont">&#xe60d;</i> 会员管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
             <dd>
@@ -151,14 +151,14 @@
                 </ul>
             </dd>
         </dl>
-        <dl id="menu-chart">
+       <%-- <dl id="menu-chart">
             <dt><i class="Hui-iconfont">&#xe61e;</i> 统计报表<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
             <dd>
                 <ul>
                     <li><a data-href="chart-order" data-title="订单销量统计" href="javascript:void(0)">订单销量统计</a></li>
                 </ul>
             </dd>
-        </dl>
+        </dl>--%>
         <dl id="menu-system">
             <dt><i class="Hui-iconfont">&#xe62e;</i> 系统管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
             <dd>
