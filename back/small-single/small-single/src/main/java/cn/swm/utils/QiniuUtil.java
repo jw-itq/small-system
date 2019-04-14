@@ -26,7 +26,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 
 /**
- * @author Exrickx
+ * @author ***x
  */
 public class QiniuUtil {
 

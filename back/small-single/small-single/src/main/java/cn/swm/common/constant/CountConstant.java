@@ -1,7 +1,7 @@
 package cn.swm.common.constant;
 
 /**
- * @author Exrickx
+ * @author ***x
  */
 public interface CountConstant {
 

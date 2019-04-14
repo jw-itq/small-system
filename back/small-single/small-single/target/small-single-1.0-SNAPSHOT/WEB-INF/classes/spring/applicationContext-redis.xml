@@ -26,7 +26,7 @@
 	<!--</bean>-->
 
 	<!-- 连接redis集群 -->
-	<!--<bean id="jedisClientCluster" class="cn.exrick.common.jedis.JedisClientCluster">
+	<!--<bean id="jedisClientCluster" class="cn.***.common.jedis.JedisClientCluster">
 		<property name="jedisCluster" ref="jedisCluster"/>
 	</bean>
 	<bean id="jedisCluster" class="redis.clients.jedis.JedisCluster">

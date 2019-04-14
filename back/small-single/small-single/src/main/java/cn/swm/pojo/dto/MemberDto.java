@@ -3,7 +3,7 @@ package cn.swm.pojo.dto;
 import java.io.Serializable;
 
 /**
- * Created by Exrick on 2017/8/25.
+ * Created by *** on 2017/8/25.
  */
 public class MemberDto implements Serializable{
 

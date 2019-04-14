@@ -3,7 +3,7 @@ package cn.swm.pojo.dto;
 import java.io.Serializable;
 
 /**
- * @author Exrickx
+ * @author ***x
  */
 public class EsCount implements Serializable {
 

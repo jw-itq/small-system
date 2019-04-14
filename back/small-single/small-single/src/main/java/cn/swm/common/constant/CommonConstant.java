@@ -3,7 +3,7 @@ package cn.swm.common.constant;
 
 /**
  * 常量
- * @author Exrickx
+ * @author ***x
  */
 public interface CommonConstant {
 

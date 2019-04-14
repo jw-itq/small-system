@@ -80,13 +80,13 @@
             <label class="form-label col-xs-4 col-sm-2">
                 底部版权信息：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" id="copyright" name="copyright" placeholder="&copy; 2017 exrick.cn" value="" class="input-text">
+                <input type="text" id="copyright" name="copyright" placeholder="&copy; 2017 ***.cn" value="" class="input-text">
             </div>
         </div>
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2">前台URL：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" id="frontUrl" name="frontUrl" placeholder="http://blog.exrick.cn" value="" class="input-text">
+                <input type="text" id="frontUrl" name="frontUrl" placeholder="http://blog.***.cn" value="" class="input-text">
             </div>
         </div>
         <div class="row cl">

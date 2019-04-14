@@ -3,7 +3,7 @@ package cn.swm.pojo.front;
 import java.io.Serializable;
 
 /**
- * @author Exrickx
+ * @author ***x
  */
 public class GeetInit implements Serializable {
 

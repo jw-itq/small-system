@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <meta name="author" content="Exrick">
+    <meta name="author" content="***">
     <link rel="Shortcut Icon" href="icon/x.png" />
     <title>SMall后台管理系统 v1.0</title>
     <meta name="keywords" content="SMall后台管理系统 v1.0,SMall,SMall购物商城后台管理系统">
@@ -110,7 +110,7 @@
                         </div>
                         <%--<div class="task-option">
                             <select class="styled">
-                                <option>Exrick</option>
+                                <option>***</option>
                                 <option>欢迎您加入开发</option>
                             </select>
                         </div>--%>
@@ -270,7 +270,7 @@
                                             <img src="lib/flatlab/img/product1.jpg">
                                         </a>
                                         <div class="media-body">
-                                            <a class="p-head" href="http://blog.exrick.cn" target="_blank">
+                                            <a class="p-head" href="#" target="_blank">
                                                 尊敬的 <span id="username"></span>，
                                                 <span id="hello"></span>
                                                 现在时间是：<span id="currentTime"></span></a>
@@ -307,11 +307,11 @@
                     <!--user info table start-->
                     <section class="panel">
                         <div class="panel-body">
-                            <a href="http://blog.exrick.cn" target="_blank" class="task-thumb">
+                            <a href="http://blog.***.cn" target="_blank" class="task-thumb">
                                 <img width="83px" height="83px" src="lib/flatlab/img/avatar1.jpg" alt="">
                             </a>
                             <div class="task-thumb-details">
-                                <h1><a href="http://blog.exrick.cn" target="_blank">Exrick</a></h1>
+                                <h1><a href="http://blog.***.cn" target="_blank">***</a></h1>
                                 <p>Author</p>
                             </div>
                         </div>
@@ -322,10 +322,10 @@
                                     <i class=" icon-tasks"></i>
                                 </td>
                                 <td>
-                                    <a target="_blank" href="http://blog.exrick.cn/intro/">
+                                    <a target="_blank" href="http://blog.***.cn/intro/">
                                         个人简介
                                     </a>
-                                    <a target="_blank" href="http://blog.exrick.cn/">
+                                    <a target="_blank" href="http://blog.***.cn/">
                                         个人博客
                                     </a>
                                 </td>
@@ -356,7 +356,7 @@
                                     <i class=" icon-bell-alt"></i>
                                 </td>
                                 <td>
-                                    <a target="_blank" href="https://github.com/Exrick">
+                                    <a target="_blank" href="https://github.com/***">
                                         Github
                                     </a>
                                     <a target="_blank" href="https://space.bilibili.com/22701144/#!/">
@@ -376,11 +376,11 @@
                         <div class="panel-body progress-panel">
                             <div class="task-progress">
                                 <h1>工作进度</h1>
-                                <p>Exrick</p>
+                                <p>***</p>
                             </div>
                             <div class="task-option">
                                 <select class="styled">
-                                    <option>Exrick</option>
+                                    <option>***</option>
                                     <option>欢迎您加入开发</option>
                                 </select>
                             </div>
@@ -485,7 +485,7 @@
                                                 <span class="timeline-icon green"></span>
                                                 <span class="timeline-date">17:00 pm</span>
                                                 <h1 class="green">22 Oct | Sunday</h1>
-                                                <p><a href="http://blog.exrick.cn" target="_blank">Exrick</a> 完成目前所有功能开发 <span><a href="https://github.com/Exrick/SMall" class="green" target="_blank">v1.0发布</a></span></p>
+                                                <p><a href="http://blog.***.cn" target="_blank">***</a> 完成目前所有功能开发 <span><a href="https://github.com/***/SMall" class="green" target="_blank">v1.0发布</a></span></p>
                                             </div>
                                         </div>
                                     </div>
@@ -498,7 +498,7 @@
                                                 <span class="timeline-icon blue"></span>
                                                 <span class="timeline-date">11:35 pm</span>
                                                 <h1 class="blue">13 Oct | Friday</h1>
-                                                <p><a href="http://blog.exrick.cn" target="_blank">Exrick</a> 完成后端接口改造二次开发 <span><a class="blue" href="https://github.com/Exrick/SMall-front" target="_blank">SMall-Front</a></span></p>
+                                                <p><a href="http://blog.***.cn" target="_blank">***</a> 完成后端接口改造二次开发 <span><a class="blue" href="https://github.com/***/SMall-front" target="_blank">SMall-Front</a></span></p>
                                                 <div class="album">
                                                     <a href="#">
                                                         <img alt="" width="48px" height="32px" src="http://oweupqzdv.bkt.clouddn.com/QQ%E6%88%AA%E5%9B%BE20170915134720.png">
@@ -534,7 +534,7 @@
                                                 </p>
                                                 <div class="notification">
                                                     <i class=" icon-exclamation-sign"></i> 启动了前台项目
-                                                    <a href="https://github.com/Exrick/SMall-front" target="_blank">SMall-Front</a>
+                                                    <a href="https://github.com/***/SMall-front" target="_blank">SMall-Front</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -548,8 +548,8 @@
                                                 <span class="timeline-icon light-green"></span>
                                                 <span class="timeline-date">09:00 pm</span>
                                                 <h1 class="light-green">28 July | Friday</h1>
-                                                <p><a href="http://blog.exrick.cn" target="_blank">Exrick</a> 启动了
-                                                    <span><a href="https://github.com/Exrick/SMall" target="_blank" class="light-green">SMall</a></span>
+                                                <p><a href="http://blog.***.cn" target="_blank">***</a> 启动了
+                                                    <span><a href="https://github.com/***/SMall" target="_blank" class="light-green">SMall</a></span>
                                                     项目，并完成第一次提交</p>
                                             </div>
                                         </div>
@@ -647,7 +647,7 @@
                                     <footer class="social-footer">
                                         <ul>
                                             <li>
-                                                <a href="https://github.com/Exrick" target="_blank">
+                                                <a href="https://github.com/***" target="_blank">
                                                     <i class="icon-github"></i>
                                                 </a>
                                             </li>
@@ -662,7 +662,7 @@
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="http://blog.exrick.cn/" target="_blank">
+                                                <a href="http://blog.***.cn/" target="_blank">
                                                     <i class="icon-pinterest"></i>
                                                 </a>
                                             </li>
@@ -686,7 +686,7 @@
             <a href="#" class="go-top">
                 <i class="icon-angle-up"></i>
             </a>参考了
-            <a href="https://github.com/Exrick/xmall">Exrick</a>的项目
+            <a href="https://github.com/***/xmall">***</a>的项目
         </div>
     </footer>
     <!--footer end-->
