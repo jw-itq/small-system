@@ -70,8 +70,8 @@
       </div>
       <div class="cop">
         <a class="content-c3" href="http://www.miibeian.gov.cn/" target="_blank">
-          <span class="content-c3">鄂ICP备0000000号-1</span>
-          <span class="content-c3">鄂ICP证0000000号</span>
+          <span class="content-c3">鄂ICP备18014513号-2</span>
+          <span class="content-c3">鄂ICP证18014513号</span>
         </a>
       </div>
     </div>
