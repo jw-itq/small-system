@@ -38,7 +38,7 @@ public class QiniuUtil {
     private static String accessKey = "eXaK0k2ufQa1Pyydb9VEOM8PBql7JerwoVXjgd1x";
     private static String secretKey = "ALTMw-bB5RbpeoA5UK8CCGu9c8b2iq-c1KqALLTj";
     private static String bucket = "small";
-    private static String origin="http://pp2fbljdl.bkt.clouddn.com/";
+    private static String origin="http://img.kankanba.xyz/";
     private static  Auth auth = Auth.create(accessKey, secretKey);
 
     public static String qiniuUpload(String filePath){
